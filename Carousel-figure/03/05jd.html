@@ -1,22 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<!--css ²ãµşÑùÊ½±í °ü×° ÒÂ·ş-->
+<head>
+	<meta charset="utf-8"/>
+	<title>jd banner</title>
+	<meta name="Keywords" content=""/>
+	<meta name="description" content=""/>
+		<!--css å±‚å æ ·å¼è¡¨ åŒ…è£… è¡£æœ-->
 		<style type="text/css">
-			*{margin:0;padding:0;}/*Çå³ıÄ¬ÈÏÄÚÍâ±ß¾à*/
+			*{margin:0;padding:0;}/*æ¸…é™¤é»˜è®¤å†…å¤–è¾¹è·*/
 
 			#main{
-				width:670px;  /*¿í¶È*/
-				height:240px; /*¸ß¶È*/
-				/*background:#f39; /*±³¾°*/
-				position:relative;/*Ïà¶Ô¶¨Î»*/
+				width:670px;  /*å®½åº¦*/
+				height:240px; /*é«˜åº¦*/
+				/*background:#f39; /*èƒŒæ™¯*/
+				position:relative;/*ç›¸å¯¹å®šä½*/
 				margin:250px auto 0;
 			}
 
 			#pic{
 				width:670px;
 				height:240px;
-				overflow:hidden;/*³¬³öÒş²Ø*/
+				overflow:hidden;/*è¶…å‡ºéšè—*/
 				position:relative;
 			}
 
@@ -24,22 +28,22 @@
 				width:170px;
 				height:22px;
 				/*border:1px solid #3ff;*/
-				position:absolute;/*¾ø¶Ô¶¨Î»*/
+				position:absolute;/*ç»å¯¹å®šä½*/
 				bottom:5px;
 				right:0;
 			}
 
 			#but ul li{
-				list-style-type:none;/*³ıÈ¥ºÚµã*/
-				float:left;/*Ïò×ó¿´Æë*/
+				list-style-type:none;/*é™¤å»é»‘ç‚¹*/
+				float:left;/*å‘å·¦çœ‹é½*/
 				height:22px;
 				width:22px;
 				background:#999;
 				border-radius:13px;
-				text-align:center;/*Ë®Æ½¾ÓÖĞ*/
+				text-align:center;/*æ°´å¹³å±…ä¸­*/
 				line-height:22px;
 				color:#fff;
-				font-family:"Î¢ÈíÑÅºÚ";
+				font-family:"å¾®è½¯é›…é»‘";
 				font-size:12px;
 				margin-right:5px;
 			}
@@ -49,9 +53,9 @@
 		</style>
 	</head>
 	<body>
-		<!--div ºĞ×ÓÄ£ĞÍ-->
+		<!--div ç›’å­æ¨¡å‹-->
 		<div id="main">
-			<!--Í¼Æ¬Çø ¿ªÊ¼-->
+			<!--å›¾ç‰‡åŒº å¼€å§‹-->
 			<div id="pic">
 				<img src="images/1.jpg" style="display:block;" />
 				<img src="images/2.jpg" />
@@ -60,8 +64,8 @@
 				<img src="images/5.jpg" />
 				<img src="images/6.jpg" />
 			</div>
-			<!--Í¼Æ¬Çø ½áÊø-->
-			<!--°´Å¥ ¿ªÊ¼-->
+			<!--å›¾ç‰‡åŒº ç»“æŸ-->
+			<!--æŒ‰é’® å¼€å§‹-->
 			<div id="but">
 				<ul>
 					<li class="hov">1</li>
@@ -72,7 +76,7 @@
 					<li>6</li>
 				</ul>
 			</div>
-			<!--°´Å¥ ½áÊø-->
+			<!--æŒ‰é’® ç»“æŸ-->
 		</div>
 	</body>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -81,9 +85,9 @@
 		var Play = null;
 		$("#but ul li").hover(function(){
 			clearInterval(Play);
-			a = $(this).index();//»ñÈ¡µ±Ç°ĞòÁĞºÅ
+			a = $(this).index();//è·å–å½“å‰åºåˆ—å·
 			$(this).addClass("hov").siblings().removeClass("hov");
-			$("#pic img").eq(a).fadeIn().siblings().hide();//ÈÃÍ¼Æ¬¶ÔÓ¦ÏÔÊ¾
+			$("#pic img").eq(a).fadeIn().siblings().hide();//è®©å›¾ç‰‡å¯¹åº”æ˜¾ç¤º
 		},function(){
 			auto();
 		});
