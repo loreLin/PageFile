@@ -1,0 +1,362 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+.banzhu_l
+{
+	float:left;
+	margin-right:100px;
+	padding:0px;
+}
+
+.banzhu_r
+{
+	float:right;
+	margin-right:100px;
+	padding:0px;
+}
+
+
+#header{
+	background:none repeat scroll 0% 0% #302F2B;
+	font-family:"Î¢ÈíÑÅºÚ";
+	color:white;
+	height: 60px;
+	margin:0px;
+	padding:0px;
+	padding-left:10px;
+	padding-top:10px;
+}
+
+h1,h2,h3,h4,h5,h6,body{
+	margin:0px;
+	padding:0px;
+}
+
+.space-course{
+	background-color:#CCC;
+	color: #99A1A6;
+}
+
+body{
+	background: none repeat scroll 0% 0% #F2F2F2;
+}
+
+#nav {
+    height: 60px;
+    margin: 0px auto;
+    background: none repeat scroll 0% 0% #302F2B;
+    position: relative;
+    z-index: 99;
+}
+
+#nav-item li {
+    float: left;
+    padding: 12px 0px;
+	margin:0px;
+}
+
+#login-area li {
+    float: left;
+    padding: 12px 0px;
+	margin:0px;
+}
+
+
+#nav-item li .smalentitle{
+	font-size:12px;
+	margin:0px 0px 0px 25px;
+	color:#B5BDC0;
+}
+#nav-item li .smalentitle_{
+	font-size:12px;
+	margin:0px 0px 0px 30px;
+	color:#B5BDC0;
+}
+
+#login-area li .smalentitle_login{
+	font-size:12px;
+	margin:0px 0px 0px 25px;
+	color:#B5BDC0;
+}
+
+#login-area li .smalentitle_login_{
+	font-size:12px;
+	margin:0px 0px 0px 32px;
+	color:#B5BDC0;
+}
+
+#nav-item {
+    margin: 0px 0px 0px 180px;
+}
+
+#login-area{
+	width:1250px;
+}
+
+#login-item a:hover,#nav-item a:hover{
+    color: #FFF;
+}
+
+#nav-item a {
+    color: #B5BDC0;
+    padding: 0px 35px;
+    line-height: 21px;
+    display: block;
+	outline: medium none;
+	font-size: 14px;
+}
+
+#login-area a {
+    color: #B5BDC0;
+    padding: 0px 35px;
+    line-height: 21px;
+    display: block;
+	outline: medium none;
+	font-size: 14px;
+}
+
+a:link, a:visited {
+    color: #5E5E5E;
+}
+
+:link, :visited, ins {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none outside none;
+	padding: 0px;
+	margin:0;
+}
+
+.havborder{
+	border-right:solid #B5BDC0 1px;
+}
+
+.havborder_{
+	border-right:solid #B5BDC0 1px;
+	margin-left:125px;
+	padding:0px;
+}
+
+.havborder_login{
+	border-right:solid #B5BDC0 1px;
+	padding:0px;
+}
+
+.l {
+    float: left;
+}
+
+#title {
+    width: 145px;
+    height: 60px;
+    left: 10px;
+    top: 4px;
+    position: absolute;
+	font-size:24px;
+	line-height:100%;
+}
+
+.entitle{
+	font-size:15px;
+}
+
+.container {
+    width: 1250px;
+}
+
+/*.space-course.my #body {
+    background: url(image/aBiteOfNanChang.jpeg) no-repeat scroll center -20px transparent;
+}*/
+
+#body {
+    padding: 0px 0px !important;
+    min-height: 750px;
+}
+
+#myForm{
+	color: #B5BDC0;
+	font-size: 14px;
+	width:420px;
+	margin-left:30px;
+	margin-top:5px;
+}
+
+#myInfo{
+	color: #B5BDC0;
+	font-size: 14px;
+	width:420px;
+	margin-left:40px;
+	padding:0px;
+	float:right;
+}
+
+#myInfo a{
+	padding:0px;
+	margin:0px;
+}
+
+#myInfo :hover
+{
+	color:#FFF;
+}
+
+label{
+	padding-left:20px;
+
+}
+
+#submit
+{
+	float:right;
+}
+
+#content
+{
+	position:relative;
+	margin:10px 100px 0px 100px;
+	padding:0;
+	width:1150px;
+	background-color:white;
+	opacity:0.96;
+	box-shadow:10px 5px 5px;
+}
+
+#firstTitle
+{
+	width:1150px;
+	height:170px;
+	background-color:#302F2B;
+}
+
+#foodMap
+{
+	text-align:center;
+	font-family:"Î¢ÈíÑÅºÚ";
+	color:white;
+	font-size:24px;
+	padding:10px;
+}
+
+#myButton li,#myButton_ li,#myButton_t li
+{
+	/*border:solid #6CF 3px;*/
+	float:left;
+	width:85px;
+	height:30px;
+	padding:5px;
+	font-size:20px;
+	border-radius:10px;
+	text-align:center;
+	background-color:#B5BDC0;
+	font-family:"Î¢ÈíÑÅºÚ";
+	color:#302F2B;
+}
+
+#myButton li
+{
+	margin:15px 0px 0px 90px;
+}
+
+#myButton_ li
+{	
+	margin:20px 0px 0px 170px;
+}
+
+#myButton_t li
+{
+	margin:20px 0px 0px 60px;
+}
+
+#myButton :hover,#myButton_ :hover,#myButton_t :hover
+{
+	background-color:white;
+	font-weight:bold;
+}
+
+/*#details
+{
+	box-shadow:10px 5px 5px;
+}*/
+
+#gulangyu,#wuyuan,#guilin,#cfj,#wuzhen,#yunnan,#cjs,#talk_travel,#talk_custom,#stranges,#history,#want,#techno
+{
+	height:240px;
+}
+
+#xihu,#fujian,#xitang,#lijiang,#guangdong,#cgd,#cah,#talk_delicious,#building,#friends,#people,#admin
+{
+	height:240px;
+	background-color:#F2F2F2;
+}
+
+#registerTable
+{
+	height:580px;
+	margin-bottom:20px;
+}
+
+#backToTop :hover
+{
+	opacity:1;
+}
+
+#top /*·µ»Ø¶¥²¿*/
+{
+	background-color:#302F2B;
+	font-size:21px;
+	font-family:"Î¢ÈíÑÅºÚ";
+	border-radius:5px;
+	width:34px;
+	height:34px;
+	position:fixed;
+	z-index:100;
+	bottom:35px;
+	text-align:center;
+	right:25px;
+	color:white;
+	opacity:0.8;
+}
+
+#mainTable input
+{
+	height:26px;	/* ×¢²á±íµ¥ text ¸ß¶È */
+	margin:10px;
+}
+
+.item
+{
+	width:80px;
+	padding-right:10px;
+	padding-top:12px;
+	float:left;
+	text-align:right;
+}
+
+.ipt
+{
+	width:250px;
+	text-align:center;
+	color:#999;
+		
+}
+
+.myButton
+{
+	 background-color:#333; 
+	 border:0px; 
+	 color:white;
+	 width:80px;
+	 height:40px;"
+}
+
+
+footer{
+	background-color:#302F2B;
+	text-align:center;
+	font-size:14px;
+	font-family:"Î¢ÈíÑÅºÚ";
+	margin-top:10px;
+}
