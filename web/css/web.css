@@ -208,3 +208,18 @@
 #LoginAndRegister .Con p.txt{padding-left:80px;}
 #LoginAndRegister .Con p.txt a{font-size:14px; color:#36A2DC;margin-left:80px;margin-right:10px;}
 #LoginAndRegister .Con .Register{display:none;}
+
+
+
+
+/*收货人信息样式 */
+#sellInfo{width:1200px;height:530px; margin:30px auto; box-shadow:0px 0px 10px #666;}
+#sellInfo h3{height:50px; background:#ccc; font-size:20px; font-weight:100;line-height:50px; text-indent:20px;}
+#sellInfo table{width:90%; margin:30px auto;border-collapse:collapse;}
+#sellInfo table tr td{border-bottom:1px dotted #ddd; height:60px; font-size:14px;}
+#sellInfo table tr td input.txt{width:250px;height:35px; border:1px solid #ddd; border-radius:3px;}
+#sellInfo table tr td.ti{width:100px; text-align:right; padding-right:10px;}
+#sellInfo table tr td select{height:30px; width:150px;}
+#sellInfo table tr td.address{text-align:center;}
+#sellInfo table tr td.address input{width:300px;height:35px; background:#ff6666; color:#fff; font-size:14px;
+				border-radius:3px;}
