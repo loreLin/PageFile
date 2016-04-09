@@ -72,7 +72,7 @@ input{border:none;outline: none;background: #fff;}
 #header .details li{position: absolute;overflow: hidden;width: 100%;box-shadow: 0 0 3px #ccc;padding-left:75px;}
 
 #header .details dl{float: left;width: 160px;/*height:110px;去掉*/text-align: center;padding:20px 30px 5px 10px;}
-#header .details dt{width: 160px;height: 110px;border-right: 1px solid #ccc;padding-right:20px;} 
+#header .details dt{width: 160px;height: 110px;border-right: 1px solid #ccc;padding-right:20px;padding-bottom:10px;} 
 #header .details dt.noborder{border: 0;}
 #header .details dd{margin:0px auto;}
 
