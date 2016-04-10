@@ -52,6 +52,14 @@ function fnHide(){
 	},200);
 };*/
 
+/*banner-nav */
+$(".banner-aside .topic").hover(function(){
+	$(this).find(".children-list").show();
+},function(){
+	$(this).find(".children-list").hide();
+})
+
+
 
 /*banner*/
 var oTimer=null;
