@@ -1,7 +1,7 @@
 /*小米官网css样式*/
 
 body{margin: 0;font: 14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;}
-ul,h3,p,input,form{margin: 0;padding: 0;}
+ul,h3,p,input,form,dl,dt,dd,ol{margin: 0;padding: 0;}
 li{list-style: none;}
 a{text-decoration: none;color: #333;display: inline-block;}
 i,em{display: inline-block;}
@@ -52,11 +52,11 @@ input{border:none;outline: none;background: #fff;}
 #header .mi-logo a{width: 55px;height: 55px;display: inline-block;}
 
 
-#header .header-form{width: 296px;position: relative;height: 50px;}        
+#header .header-form{width: 296px;position: relative;height: 50px;z-index:5;}        
 #header .header-form .txt{width:223px;height:48px;padding:0 10px;line-height: 48px;border:1px solid #DFDFDF;}
 #header .header-form .btn{width: 52px;height:50px;border:1px solid #DFDFDF;position: absolute;right:1px;
                     cursor: pointer;transition:all 0.3s ease 0s;}
-#header .header-form:hover .btn{background: orange;color:#fff;}    
+#header .header-form:hover .btn{background: orange;color:#fff;border-color:orange;}    
 #header .header-form p{position: absolute;right:55px;top:14px;}    
 #header .header-form p a{padding: 1px 3px;background: #F3F3F3;margin-right: 5px;display: inline-block;}            
 #header .header-form p a:hover{background: #d9d9d9;}
@@ -81,3 +81,47 @@ input{border:none;outline: none;background: #fff;}
 #header .datalist p.searchcon a{display: block;background: #fff;height: 26px;line-height: 26px;padding:0 10px;width: 222px;}
 #header .datalist p.searchcon a span{float: right;}
 #header .datalist p.searchcon a:hover{background: #d9d9d9;}
+
+
+
+/*banner图片开始*/
+#banner{height: 460px;position: relative;}
+#banner .banner-aside{width: 234px;height: 460px;position: absolute;background: rgba(0,0,0,0.6);z-index: 3;}
+#banner .banner-aside .aside-txt{width: 234px;height: 420px;padding-top: 20px;}
+#banner .banner-aside .aside-txt .topic{width: 234px;}
+#banner .banner-aside .aside-txt .topic>a{padding-left: 30px;display: block;height: 42px;line-height: 42px;
+                                        color: #fff;position: relative;}
+#banner .banner-aside .aside-txt .topic>a i.iconfont{position: absolute;top: 12px;right: 30px;font-size: 16px;
+            height: 16px;line-height: 16px;}
+#banner .banner-aside .aside-txt .topic:hover >a{background: orange;}            
+
+
+#banner .banner-aside .aside-txt .topic .children-list {width: 530px;height: 460px;background: #eee;
+            position: absolute;top: 0;left: 234px;display: none;}  
+#banner .banner-aside .aside-txt .topic .minWidth{width: 265px;}
+#banner .children-list ul{width: 265px;height: 460px;float: left;}  
+
+#banner .children-list .link-img {width: 180px;
+        display: block;padding: 18px 0px 18px 20px; float: left;} 
+#banner .children-list .link-img:hover{color: #F25807;}        
+#banner .children-list .link-img img{margin-right: 10px;}        
+#banner .children-list .link-img span{line-height: 40px;height: 40px;}   
+#banner .children-list .sel-buy {width: 58px;height: 22px;line-height: 22px;float: right;background: #fff;
+            border:1px solid #F25807;text-align: center;margin-top: 26px;color: #F25807;
+            transition:all 0.3s ease 0s;} 
+#banner .children-list .sel-buy:hover{color: #fff;background: #F25807;}  
+
+#banner .banner-wrap,#banner .banner-wrap .banner-wrap-pic{position: absolute;z-index: 2;
+    width: 1226px;height: 460px;overflow: hidden;} 
+#banner .banner-wrap .banner-wrap-pic li{position: absolute;display: none;}    
+#banner .banner-wrap .btnLeft,#banner .banner-wrap .btnRight{position: absolute;top: 50%;z-index: 99;display: none;
+    background: url("../images/arrow.png") no-repeat;width: 41px;height: 69px;margin-top: -35px;}
+#banner .banner-wrap .btnLeft{ left: 234px; background-position: -83px 0;} 
+#banner .banner-wrap .btnRight{right: 0px;background-position: right 0;}  
+#banner .banner-wrap .btnLeft:hover{background-position:0 0;} 
+#banner .banner-wrap .btnRight:hover{background-position:-42px 0;} 
+#banner .banner-wrap ol{position: absolute;right: 30px;bottom: 30px;z-index: 99;}
+#banner .banner-wrap ol li{width: 6px;height: 6px;border: 2px solid rgba(255,255,255,0.4);
+    float: left;margin: 0 5px;background: rgba(0,0,0,0.3);border-radius: 5px;transition:all 0.3 ease 0s;}
+#banner .banner-wrap ol li:hover,#banner .banner-wrap ol li.active{border: 2px solid rgba(0,0,0,0.3);
+                    background: rgba(255,255,255,0.3);}    

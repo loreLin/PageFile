@@ -15,5 +15,6 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-sousuo:before { content: "\e623"; }
-.icon-gouwuche:before { content: "\e646"; }
+.icon-sousuo:before { content: "\e638"; }
+.icon-gouwuche:before { content: "\e63b"; }
+.icon-youjiantou:before { content: "\e659"; }
