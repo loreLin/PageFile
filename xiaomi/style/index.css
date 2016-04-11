@@ -56,7 +56,7 @@ input{border:none;outline: none;background: #fff;}
 #header .header-form .txt{width:223px;height:48px;padding:0 10px;line-height: 48px;border:1px solid #DFDFDF;}
 #header .header-form .btn{width: 52px;height:50px;border:1px solid #DFDFDF;position: absolute;right:1px;
                     cursor: pointer;transition:all 0.3s ease 0s;}
-#header .header-form:hover .btn{background: orange;color:#fff;border-color:orange;}    
+#header .header-form:hover .btn{background: #F25807;color:#fff;border-color:#F25807;}    
 #header .header-form p{position: absolute;right:55px;top:14px;}    
 #header .header-form p a{padding: 1px 3px;background: #F3F3F3;margin-right: 5px;display: inline-block;}            
 #header .header-form p a:hover{background: #d9d9d9;}
@@ -91,9 +91,9 @@ input{border:none;outline: none;background: #fff;}
 #banner .banner-aside .aside-txt .topic{width: 234px;}
 #banner .banner-aside .aside-txt .topic>a{padding-left: 30px;display: block;height: 42px;line-height: 42px;
                                         color: #fff;position: relative;}
-#banner .banner-aside .aside-txt .topic>a i.iconfont{position: absolute;top: 12px;right: 30px;font-size: 16px;
-            height: 16px;line-height: 16px;}
-#banner .banner-aside .aside-txt .topic:hover >a{background: orange;}            
+#banner .banner-aside .aside-txt .topic>a i.iconfont{position: absolute; top: 12px;right: 20px;color: rgba(255,255,255,0.6);
+                                            font-size: 16px;line-height: 16px;}
+#banner .banner-aside .aside-txt .topic:hover >a{background: #F25807;}            
 
 
 #banner .banner-aside .aside-txt .topic .children-list {width: 530px;height: 460px;background: #fff;box-shadow: 0 0 3px #ccc;
@@ -125,3 +125,26 @@ input{border:none;outline: none;background: #fff;}
     float: left;margin: 0 5px;background: rgba(0,0,0,0.3);border-radius: 5px;transition:all 0.3 ease 0s;}
 #banner .banner-wrap ol li:hover,#banner .banner-wrap ol li.active{border: 2px solid rgba(0,0,0,0.3);
                     background: rgba(255,255,255,0.3);}    
+
+
+
+
+#openBuy{margin: 20px auto 20px;}
+#openBuy .open-left{width: 234px;}
+#openBuy .open-left ul{padding: 3px; font-size: 12px; text-align: center; background: #5F5750;}
+#openBuy .open-left ul li { position: relative; float: left; width: 70px; height: 82px; padding: 0px 3px;}
+#openBuy .open-left ul a {  padding-top: 18px;color: rgba(255, 255, 255, 0.7); transition: color 0.2s ease 0s;}
+#openBuy .open-left ul i { height: 24px; margin-bottom: 4px;font-size: 24px; line-height: 24px;display: block;}
+#openBuy .open-left ul li.bef::before, .open-left ul li.aft::after { position: absolute; content: "";background: #665E57;display:table;}
+#openBuy .open-left ul li.bef::before { top: -1px;left: 6px; width: 64px;height: 1px;}
+#openBuy .open-left ul li.aft::after { top: 6px; left: 0px; width: 1px; height: 70px;}
+#openBuy .open-left ul li.aft::after {background: #C0C0c0;}
+#openBuy .open-left ul li.bef::before{background: #C0C0c0;}
+#openBuy .open-left ul li.noneed::before, #openBuy .open-left ul li.noneed::after{width:0;height:0;}
+
+#openBuy .open-left ul a:hover{color: #fff;}
+#openBuy .openb-pic{width: 978px;}
+#openBuy .openb-pic li {float: left;width: 316px;height: 170px; margin-left: 15px; transition: box-shadow 0.2s linear 0s;}
+#openBuy .openb-pic li:nth-of-type(1){margin-left: 0;}
+#openBuy .openb-pic li a {height: 170px;}
+#openBuy .openb-pic img { width: 316px;height: 170px;}
