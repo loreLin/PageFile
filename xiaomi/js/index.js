@@ -109,3 +109,10 @@ $(".banner-wrap ol li").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 	};
 })
+
+$(".more").find("a").click(function(){
+	if ($(this).not(".disClick")) {
+		$(".star-goods-wrap").find("ul").css("margin-left",-1240*$(this).index()+"px");
+		$(this).addClass("disClick").siblings().removeClass("disClick");
+	};
+})
