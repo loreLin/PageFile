@@ -110,9 +110,22 @@ $(".banner-wrap ol li").click(function(){
 	};
 })
 
-$(".more").find("a").click(function(){
+$(".star-goods .more").find("a").click(function(){
 	if ($(this).not(".disClick")) {
 		$(".star-goods-wrap").find("ul").css("margin-left",-1240*$(this).index()+"px");
 		$(this).addClass("disClick").siblings().removeClass("disClick");
 	};
 })
+
+
+$("#match .topic .more ul li").mouseover(function(){
+   $("#match .content-right").find("ul").eq($(this).index()).show().siblings().hide();
+   $(this).addClass("active").siblings().removeClass("active");
+
+})
+
+$("#match .content-right li").hover(function(){
+	$(this).find(".comment").css("height","80px");
+},function(){
+	$(this).find(".comment").css("height","0px");
+});
