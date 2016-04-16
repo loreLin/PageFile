@@ -118,14 +118,25 @@ $(".star-goods .more").find("a").click(function(){
 })
 
 
-$("#match .topic .more ul li").mouseover(function(){
-   $("#match .content-right").find("ul").eq($(this).index()).show().siblings().hide();
-   $(this).addClass("active").siblings().removeClass("active");
+function fnTab(objLi,objUl){
+	objLi.mouseover(function(){
+		objUl.eq($(this).index()).show().siblings().hide();
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+}
 
-})
+fnTab($("#match .topic .more li"),$("#match .content-right ul"));
+fnTab($("#parts .topic .more li"),$("#parts .content-right ul"));
+fnTab($("#around .topic .more li"),$("#around .content-right ul"));
 
-$("#match .content-right li").hover(function(){
-	$(this).find(".comment").css("height","80px");
-},function(){
-	$(this).find(".comment").css("height","0px");
-});
+
+function changeHight(oLi,oDiv){
+	oLi.hover(function(){
+		$(this).find(oDiv).css("height","80px");
+	},function(){
+		$(this).find(oDiv).css("height","0px");
+	});
+}
+changeHight($("#match .content-right li"),".comment");
+changeHight($("#parts .content-right li"),".comment");
+changeHight($("#around .content-right li"),".comment");

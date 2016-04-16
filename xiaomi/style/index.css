@@ -205,17 +205,32 @@ input{border:none;outline: none;background: #fff;}
 #match .topic .more li{float:left;margin-left:30px;font-size:16px;border-bottom:2px solid transparent;
                         transition:all 0.3s ease 0s;}
 #match .topic .more li.active{border-bottom:2px solid #FF6700;color:#FF6700; }
-#match .content-left li:nth-of-type(2){margin-top: 14px;}
+.content-left li:nth-of-type(2){margin-top: 14px;}
 .content-right ul li{position: relative;}
-#match .content-right ul li.min-box{height: 93px;padding: 50px 0 0 0;overflow: hidden;}
-#match .content-right ul li.min-box a.pic{position: absolute;right: 20px;top: 32px;width: 80px;height: 80px;}
-#match .content-right ul li.min-box a.pic img{width: 80px;height: 80px;}
-#match .content-right ul li.min-box h3{margin: -10px 110px 5px 30px;text-align: left;}
-#match .content-right ul li.min-box p.price{margin: 0px 110px 0px 30px;text-align:left;line-height: 14px;
+.content-right ul li.min-box{height: 93px;padding: 50px 0 0 0;overflow: hidden;}
+.content-right ul li.min-box a.pic{position: absolute;right: 20px;top: 32px;width: 80px;height: 80px;}
+.content-right ul li.min-box a.pic img{width: 80px;height: 80px;}
+.content-right ul li.min-box h3{margin: -10px 110px 5px 30px;text-align: left;}
+.content-right ul li.min-box p.price{margin: 0px 110px 0px 30px;text-align:left;line-height: 14px;
                                         font-size: 14px;}
-#match .content-right ul li.min-box a.pic i{font-size: 48px;line-height: 48px;color:#FF6700;}
-#match .content-right ul li div.comment{position: absolute;left: 0;bottom: 0;font-size: 12px;
+.content-right ul li.min-box a.pic i{font-size: 48px;line-height: 48px;color:#FF6700;}
+.content-right ul li div.comment{position: absolute;left: 0;bottom: 0;font-size: 12px;
                 background: #FF6700;width: 234px; height: 0;overflow: hidden;transition:all 0.2s linear 0s;}
 .content-right ul li div.comment a{display: block;padding: 10px 30px;}
 .content-right ul li div.comment a em{color: #fff;}
 .content-right ul li div.comment a em:nth-of-type(2){color: rgba(255, 255, 255, 0.6);}
+
+#parts{height: 686px;margin-bottom: 8px;} 
+#parts .topic .more{line-height:26px;height:26px;right:15px;}
+#parts .topic .more li{float:left;margin-left:30px;font-size:16px;border-bottom:2px solid transparent;
+                        transition:all 0.3s ease 0s;}
+#parts .topic .more li.active{border-bottom:2px solid #FF6700;color:#FF6700; }
+
+
+#around{height: 686px;margin-bottom: 8px;} 
+#around .topic .more{line-height:26px;height:26px;right:15px;}
+#around .topic .more li{float:left;margin-left:30px;font-size:16px;border-bottom:2px solid transparent;
+                        transition:all 0.3s ease 0s;}
+#around .topic .more li.active{border-bottom:2px solid #FF6700;color:#FF6700; }
+.content-right ul li .newProuduct{width:64px;height:20px;line-height:20px;background:#0f0;position:absolute;top:0;left:50%;
+									margin-left:-32px;font-size:12px;text-align:center;}
