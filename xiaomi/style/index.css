@@ -144,7 +144,7 @@ input{border:none;outline: none;background: #fff;}
 
 #openBuy .open-left ul a:hover{color: #fff;}
 #openBuy .openb-pic{width: 978px;}
-#openBuy .openb-pic li {float: left;width: 316px;height: 170px; margin-left: 15px; transition: box-shadow 0.2s linear 0s;}
+#openBuy .openb-pic li {float: left;width: 316px;height: 170px; margin-left: 9px; transition: box-shadow 0.2s linear 0s;}
 #openBuy .openb-pic li:nth-of-type(1){margin-left: 0;}
 #openBuy .openb-pic li a {height: 170px;}
 #openBuy .openb-pic img { width: 316px;height: 170px;}
@@ -153,7 +153,7 @@ input{border:none;outline: none;background: #fff;}
 
 .common .topic{height: 58px;line-height: 58px;position: relative;}
 .common .topic h2{font-size: 22px;font-weight: 200;color: #333;} 
-.common .topic .more{position: absolute;right: 0;top:12px;}
+.common .topic .more{position: absolute;right:15px;;top:12px;}
 .star-goods .topic .more a{border: 1px solid #E0E0E0;width: 24px;height: 16px;line-height: 21px;color: #333;
             padding: 3px 5px;text-align: center;font-size: 16px;transition: color 0.3s ease 0s;}
 .star-goods .topic .more a.disClick{cursor: default;color: #ddd;}  
@@ -238,7 +238,7 @@ input{border:none;outline: none;background: #fff;}
 
 
 
-#recommend .topic .more{position: absolute;right:15px;;top:0;}
+#recommend .topic .more{position: absolute;right:15px;top:0;}
 #recommend .topic .more a{border: 1px solid #E0E0E0;width: 24px;height: 16px;line-height: 21px;color: #333;
             padding: 3px 5px;text-align: center;font-size: 16px;transition: color 0.3s ease 0s;}
 #recommend .topic .more a.disClick{cursor: default;color: #ddd;}  
