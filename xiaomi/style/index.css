@@ -234,3 +234,17 @@ input{border:none;outline: none;background: #fff;}
 #around .topic .more li.active{border-bottom:2px solid #FF6700;color:#FF6700; }
 .content-right ul li .newProuduct{width:64px;height:20px;line-height:20px;background:#0f0;position:absolute;top:0;left:50%;
 									margin-left:-32px;font-size:12px;text-align:center;}
+
+
+
+
+#recommend .topic .more{position: absolute;right: 0;top:0;}
+#recommend .topic .more a{border: 1px solid #E0E0E0;width: 24px;height: 16px;line-height: 21px;color: #333;
+            padding: 3px 5px;text-align: center;font-size: 16px;transition: color 0.3s ease 0s;}
+#recommend .topic .more a.disClick{cursor: default;color: #ddd;}  
+#recommend .topic .more a:nth-of-type(1){margin-right: -1px;transform:rotateZ(180deg);}  
+#recommend .topic .more a:hover{color: #f00;} 
+#recommend .topic .more a.disClick:hover{color: #ddd;} 
+#recommend .content-right{width:1226px;height:340px;position:relative;overflow:hidden;}
+#recommend .content-right ul{width:4960px;position:absolute;left:0;top:0;background:#f5f5f5;height:340px;transition:left 0.3s ease 0s;}
+#recommend .content-right ul li{margin:0 14px 0 0;}
