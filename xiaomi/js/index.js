@@ -140,3 +140,6 @@ function changeHight(oLi,oDiv){
 changeHight($("#match .content-right li"),".comment");
 changeHight($("#parts .content-right li"),".comment");
 changeHight($("#around .content-right li"),".comment");
+
+
+
