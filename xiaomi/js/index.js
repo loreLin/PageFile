@@ -155,6 +155,7 @@ $("#recommend .more a").eq(1).click(function(){
 		iCount=3;
 		return;
 	}
+	$("#recommend").find("ul").css("left",-1240*iCount+"px");
 })
 
 $("#recommend .more a").eq(0).click(function(){
