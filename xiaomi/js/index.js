@@ -142,4 +142,32 @@ changeHight($("#parts .content-right li"),".comment");
 changeHight($("#around .content-right li"),".comment");
 
 
+var iCount=0;
+$("#recommend .more a").eq(1).click(function(){
+	iCount++;
+	if(iCount>0){
+	  $("#recommend .more a").removeClass("disClick");
+	}
+	if(iCount==3){
+		$(this).addClass("disClick").siblings().removeClass("disClick");
+	}
+	else if(iCount>3){
+		iCount=3;
+		return;
+	}
+})
 
+$("#recommend .more a").eq(0).click(function(){
+	iCount--;
+	if(iCount<0){
+		iCount=0;
+		return;
+	}
+	else if(iCount==0){
+		$(this).addClass("disClick").siblings().removeClass("disClick");
+	}
+	if(iCount>0){
+		$("#recommend .more a").removeClass("disClick");
+	}
+	$("#recommend").find("ul").css("left",-1240*iCount+"px");
+})
