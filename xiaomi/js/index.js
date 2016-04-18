@@ -142,7 +142,7 @@ changeHight($("#parts .content-right li"),".comment");
 changeHight($("#around .content-right li"),".comment");
 
 
-var iCount=0;
+/*var iCount=0;
 $("#recommend .more a").eq(1).click(function(){
 	iCount++;
 	if(iCount>0){
@@ -171,4 +171,23 @@ $("#recommend .more a").eq(0).click(function(){
 		$("#recommend .more a").removeClass("disClick");
 	}
 	$("#recommend").find("ul").css("left",-1240*iCount+"px");
+})*/
+
+var iCount=0;
+$("#recommend .more a").eq(1).click(function(){
+	if(iCount<3){
+		iCount++;
+		$("#recommend .more a").removeClass("disClick");
+		iCount==3 && $(this).addClass("disClick");
+		$("#recommend").find("ul").css("left",-1240*iCount+"px");
+	}
+})
+
+$("#recommend .more a").eq(0).click(function(){
+	if(iCount>0){
+		iCount--;
+		$("#recommend .more a").removeClass("disClick");
+		iCount==0 && $(this).addClass("disClick");
+		$("#recommend").find("ul").css("left",-1240*iCount+"px");
+	}
 })
