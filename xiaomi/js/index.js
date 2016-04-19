@@ -236,3 +236,32 @@ $("#recommend .more a").eq(0).click(function(){
 		$("#recommend").find("ul").css("left",-1240*iCount+"px");
 	}
 })
+
+
+$("#content").find(".content-item").each(function(i,elem){
+	(function (obj){
+		var iNum=0;
+		obj.find(".nextBtn").click(function(){
+			if(iNum<3){
+				iNum++;
+				fntab();
+			}
+		})
+		obj.find(".prevBtn").click(function(){
+			if(iNum>0){
+				iNum--;
+				fntab();
+			}
+		})
+
+		obj.find(".dotBtn").find("li").click(function(){
+			iNum=$(this).index();
+			fntab();
+		})
+
+		function fntab(){
+			obj.find(".content-scroll").css("left",-296*iNum+"px");
+			obj.find(".dotBtn").find("li").eq(iNum).addClass("on").siblings().removeClass("on");
+		}
+	})($(elem));
+});
