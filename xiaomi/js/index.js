@@ -14,7 +14,7 @@ $("#header").find(".txt").blur(function(){  //失去焦点
 var timer=null;
 $(".header-nav li").not(".noselect").hover(function(){	
 	clearInterval(timer);  
-	$(".details").animate({height:"230px"}).find("li").eq($(this).index()).show().siblings().hide();
+	$(".details").stop().animate({height:"230px"}).find("li").eq($(this).index()).show().siblings().hide();
 },function(){
 	fnHide();
 });
@@ -27,7 +27,7 @@ $(".details li").hover(function(){
 
 function fnHide(){
 	timer=setTimeout(function(){
-		$(".details").animate({height:"0px"}).find("li").hide();
+		$(".details").stop().animate({height:"0px"}).find("li").hide();
 	},200);
 };
 /*移入的时候清楚延迟消失的定时器*/
