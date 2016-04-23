@@ -1,0 +1,53 @@
+/*腾讯课堂css样式*/
+
+
+h1,ul,li,ol,h2,h3,input,a,{margin:0;padding:0;}
+body{font-size:12px;font-family:"微软雅黑";cursor:default;background-color:#fff}
+a{text-decoration:none;}
+.clear{clear:both;}
+
+
+/*滚动条宽度*/
+::-webkit-srollbar{width:10px;background-color:#dedbde;}
+
+/*轨道样式*/
+::-webkit-scrollbar-track{}
+
+/*Handle样式*/
+::-webkit-scrollbar-thumb{border-radius:10px;background:rgba(0,0,0,0.2);min-height:28px;}
+
+/*当前窗口未激活的情况下*/
+::-webkit-scrollbar-thumb:window-inactive{
+    padding-top:100px;
+	-webkit-box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset -1px -1px 0 rgba(0,0,0,0.07);
+	background-clip:padding-box;background-color:#dadada;
+	min-height:28px;-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+/*hover到滚动条上*/
+::-webkit-scrollbar-thumb:vertical:hover{
+   background-color:rgba(0,0,0,0.4);
+}
+/*滚动条按下*/
+::-webkit-scrollbar-thumb:vertical:active{
+  background-color:rgba(0,0,0,0.5);
+}
+
+/*header style*/
+#header{width:1200px;height:85px;margin:0 auto;margin-top:15px;}
+#header h1{float:left;margin-top:3px;}
+#header .search{width:450px;height:36px;float:left;margin-left:220px;border:2px solid #188eee;
+                position:relative;}
+#header .search input{width:370px;height:30px;border:0;line-height:30px;position:absolute;
+                outline:0;color:#545454;font-family:"微软雅黑";left:0;
+                font-size:12px;padding:3px 10px;-webkit-writing-mode: horizontal-tb;}
+#header .search a{display:inline-block;width:58px;height:36px;position:absolute;right:0;line-height:36px;
+                text-align:center;background:#188eee;}
+#header .search a i{display:inline-block;width:20px;height:20px;background:url("../images/icon-search-white.png");
+                margin-top:9px;margin-left:3px;}
+#header .login{height:40px;float:right;color:#dedede;line-height:40px;margin-top:2px;}
+#header .login a{color:#333;padding:0 0 0 6px;margin-right:5px;}
+
+
+/*banner start*/
