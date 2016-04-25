@@ -3,6 +3,7 @@
 
 h1,ul,li,ol,h2,h3,input,a,{margin:0;padding:0;}
 body{font-size:12px;font-family:"微软雅黑";cursor:default;background-color:#fff}
+li{list-style: none;}
 a{text-decoration:none;}
 .clear{clear:both;}
 
@@ -67,3 +68,28 @@ a{text-decoration:none;}
                 background:url("../images/button.png") no-repeat center;background-position:-126px -163px;
                 margin:0 10px -1px 15px;}
 #banner .big-bg .big-banner .big-banner-ul #course{display:block;width:220px;height:50px;line-height:50px;}
+#banner .big-bg .big-banner-ul .course{text-decoration:none;color:white;font-size:16px;}
+#banner .big-bg .big-banner-ul .course:hover{text-decoration:underline;}
+#banner .big-bg .big-banner-ul ul{list-style:none;}
+#banner .big-bg .big-banner-ul ul .course-li{width:205px;height:59px;padding-top:11px;padding-left:15px;
+                      border-bottom:1px solid #1681c4;background:#0477C0;position:relative;}
+#banner .big-bg .big-banner-ul ul .course-li:hover{background:#0264a3;}
+#banner .big-bg .big-banner-ul ul .course-li .course{line-height:24px;display:block;}
+#banner .big-bg .big-banner-ul ul .course-li i{display:inline-block;width:6px;height:12px;position:absolute;
+                             top:18px;right:16px;background:url("../images/button.png");background-position:-147px -163px;}
+.li-hover{background-position:-157px -163px;}
+#banner .big-bg .big-banner-ul ul .course-li .course-hot{display:inline-block;height:21px;margin-right:8px;color:#97d2f7;
+                                                   text-decoration:none;font-size:14px;margin-top:5px;}
+#banner .big-bg .big-banner-ul ul .course-li .course-hot:hover{text-decoration:underline;}
+#banner .big-bg .big-banner-ul .course-list{width:446px;position:absolute;top:0;left:220px;z-index:1;background:rgba(255,255,255,0.95);
+                     *background:#fff;/*opacity:0.95;filter:alpha(opacity=95);*/border:2px solid #09699c;display:none;}
+#banner .big-bg .big-banner-ul .course-list ul{width:382px;margin:0 auto;list-style:none;}
+#banner .big-bg .big-banner-ul .course-list ul li{ border-bottom:1px solid #e5e5e5;width:382px;padding:15px 0 12px;}
+#banner .big-bg .big-banner-ul .course-list ul li .course-child{color:#039ae3;font-weight:bold;font-size:14px;
+                   text-decoration:none;width:80px;float:left;margin-top:1px;}
+#banner .big-bg .big-banner-ul .course-list .course-child-list{width:297px;display:inline-block;}
+#banner .big-bg .big-banner-ul .course-list .course-child-list a{display:inline-block;width:91px;height:21px;
+              text-decoration:none;color:#333;font-size:14px;margin-bottom:3px;}
+#banner .big-bg .big-banner-ul .course-list .course-child-list a:hover{color:#63b6f7;}
+
+
