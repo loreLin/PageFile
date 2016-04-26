@@ -93,3 +93,99 @@ a{text-decoration:none;}
 #banner .big-bg .big-banner-ul .course-list .course-child-list a:hover{color:#63b6f7;}
 
 
+/*big-banner-img start*/
+#banner .big-bg .big-banner .big-banner-img{width:760px;height:300px;overflow:hidden;
+                position:absolute;top:0;left:220px;*z-index:-1;}
+#banner .big-bg .big-banner .big-banner-img #ban-ul li{list-style:none;float:left;}
+.img-hide{display:none;}
+.on{display:block;}
+.big-banner-img #ban-nav{
+                width:140px;height:24px;position:absolute;          
+                bottom:15px;left:50%;list-style:none;
+                margin-left:-70px;border-radius:24px;
+                background:rgba(0,0,0,0.1);
+                /*opacity:0.9;filter:alpha(opacity=90);*/}
+            .big-banner-img #ban-nav li{
+                float:left;width:10px;height:10px;
+                margin:8px -17px 0 25px;
+                background:url("images/button.png");
+                background-position:-87px -116px;
+            }
+            .ban-button{
+                display:none;width:46px;height:70px;position:absolute;
+                top:110px;background:url("images/button.png");
+            }
+            .ban-pre{               
+                left:10px;
+                background-position:-74px 0;
+            }
+            .ban-next{              
+                right:10px;
+                background-position:-123px 0;
+            }
+            /*end *big-banner-img */
+
+            /*big-banner-board start*/
+            .banner .big-bg .big-banner .big-banner-board{
+                width:220px;height:260px;position:absolute;
+                top:20px;right:0;background: rgba(0,0,0,0.4);
+                /*opacity:0.8;filter:alpha(opacity=80);*/
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+            }
+            .banner .big-bg .big-banner .big-banner-board ul{
+                list-style:square;padding:0 0 0 15px ;margin-left:20px;
+                font-size:14px;
+            }
+            .big-banner-board ul li{
+                padding:13px 0 1px;color:white;
+            }
+            .big-banner-board  a{
+                color:white;text-decoration:none;
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000)
+            }
+            .big-banner-board div{
+                color:white;position:relative;
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000)
+            }
+            .big-banner-board ul li a:hover{
+                text-decoration:underline;
+            }
+            .big-banner-board .button{
+                width:110px;height:110px;text-align:center;
+                display:inline-block;margin-top:14px;float:left;
+                background:rgba(0,0,0,0.2);
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000)
+                /*opacity:0.8;filter:alpha(opacity=80);*/
+                
+            }
+            .big-banner-board .button:hover{
+                background:rgba(0,0,0,0.3);
+                /*opacity:0.7;filter:alpha(opacity=70);*/
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)
+            }
+            .big-banner-board .button i{
+                display:inline-block;width:44px;height:44px;            
+                margin-top:10px;margin-right:2px;
+            }
+            .big-banner-board .button .download{
+                background:url("images/button.png");
+                background-position:-123px -73px;
+            }
+            .big-banner-board .button i + p{
+                font-size:16px;margin-top:3px;margin-bottom:2px
+            }
+            .big-banner-board .button .weixin{
+                background:url("images/button.png");
+                background-position:-172px -73px;
+            }
+            .big-banner-board #board-qr img{
+                position:absolute;top:-7px;left:-112px;
+                display:none;
+            }
+            /*end big-banner-board*/
+
+            /*end big-banner*/
+
+            /*end banner*/
+
+
