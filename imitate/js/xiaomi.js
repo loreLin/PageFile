@@ -1,4 +1,4 @@
-/*首页的js*/
+/*小米首页的js*/
 $("#header").find(".txt").focus(function(){  //获取焦点
 	$(".header-form").find(".datalist").show();
 
