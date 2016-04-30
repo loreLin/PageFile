@@ -109,8 +109,8 @@ a{text-decoration:none;}
                 background:url("../images/button.png");background-position:-87px -116px;}
 #banner .big-bg .big-banner .big-banner-img .ban-button{display:none;width:46px;height:70px;position:absolute;
                 top:110px;background:url("../images/button.png");} 
-#banner .big-bg .big-banner .big-banner-img .ban-button .ban-pre{left:10px;background-position:-74px 0;}
-#banner .big-bg .big-banner .big-banner-img .ban-button .ban-next{right:10px;background-position:-123px 0;}
+#banner .big-bg .big-banner .big-banner-img .ban-pre{left:10px;background-position:-74px 0;}
+#banner .big-bg .big-banner .big-banner-img .ban-next{right:10px;background-position:-123px 0;}
 
 /*big-banner-board style*/
  #banner .big-bg .big-banner .big-banner-board{width:220px;height:260px;position:absolute;top:20px;right:0;
