@@ -7,7 +7,7 @@ var _qindex=0;
 var clesrTime=null;
 var topFlag= true;/*回到顶部标识*/
 
-$(function(){
+
    /*课程导航右侧图标变换样式 */
   $(".big-banner-ul ul li").hover(function(){
       $(this).find("i").css("backgroundPosition","-157px -163px");
@@ -24,9 +24,12 @@ $(function(){
 	  $("course-list").stop();
 	  $(this).find(".course-list").fadeOut("slow").hide();
   })
-})
+
+
+
+
   /*banner轮播图特效*/
-  $("#ban-nav li").mouseover(function(){
+  $("#ban-nav li,.ban-next,.ban-pre").mouseover(function(){
     clearInterval(clearTime);
 	_index=$(this).index();//获取序列号
 	scrollPlay();//调用播放方法
@@ -40,9 +43,9 @@ $(function(){
 //右切换按扭
 $(".ban-next").click(function(){
   _index++;
-  if(_index>5){
+  if(_index>4){
     _index=0;
-	_qindex=5;
+	_qindex=4;
   }
   scrollplay();
   _qindex=_index;
@@ -55,7 +58,7 @@ $(".ban-pre").click(function(){
 	if(_index<0){
 		_qindex=0;
 
-		_index=5;
+		_index=4;
 	}
 	scrollPlay();
 	_qindex=_index;
@@ -64,12 +67,12 @@ autoPlay();//一开始就要自动轮播
 
 
 //按扭显示隐藏
-$(".big-banner-imgh").hover(function(){
+$(".big-banner-img").hover(function(){
 	//显示
-	$(".ban-next,.ban-pre").show();
+	$(".ban-pre,.ban-next").show();
 },function(){
 	//隐藏
-	$("ban-next,.ban-pre").hide();
+	$(".ban-pre,.ban-next").hide();
 });
 
 
@@ -80,44 +83,66 @@ function autoPlay(){
 	clearTime=setInterval(function(){
 		_index++;//序列号加1
 
-		if(_index>5){
+		if(_index>4){
 			_index=0;
-			_qindex=5;
+			_qindex=4;
 		}
 		scrollPlay();
 		_qindex=_index;
 
-	},2000);
+	},5000);
 
 
 }
-function scrollplay(){
+function scrollPlay(){
   $("#ban-nav").eq(_index).css("backgroundPosition","-74px -116px");
-  if(_index==0 && _qindex==5){
-    next();
-	}else if(_index==5 && _qindex==0){
-		prev();
+  if(_index==0 && _qindex==4){
+    scroll();
+	}else if(_index==4 && _qindex==0){
+		scroll();
 	}else if(_index>_qindex){//左移
-		next();
+		scroll();
 	}else if(_index<_qindex){//往右移
-		prev();
+		scroll();
 	
   }
 }
 
 
 //下一张，左移
-function next(){
-   $("#ban-nav li").eq(index).css("backgroundPosition","-74px -116px");
-   $("#ban-nav li").eq(index).siblings().css("backgroundPosition","-87px -116px");
-   var background=$("#ban-nav li").eq(index).data("color");
+function scroll(){
+   $("#ban-nav li").eq(_index).css("backgroundPosition","-74px -116px");
+   $("#ban-nav li").eq(_index).siblings().css("backgroundPosition","-87px -116px");
+   var background=$("#ban-nav li").eq(_index).data("color");
    $("#ban-ul a").stop();
    $("#ban-ul a:visible").hide();
-   $("#ban-ul li").eq(index).find("a").fadeIn("slow").show();
+   $("#ban-ul li").eq(_index).find("a").fadeIn("slow").show();
    $(".big-bg").css("background",background);
   
 }
 
+
+/*微信二维码显示*/
+$("#board-qr,.weixin").hover(function(){
+    $(this).find("img").fadeTo("500",1);
+    },function(){       
+        $(this).find("img").animate({
+        opacity: "hide"
+    },"500");
+})
+   
+
+/*热门课程导航效果*/
+$(".course-hot-nav li").hover(function(){
+   $(this).css("borderBottom","2px solid #188eee").siblings().css("borderBottom","0px");
+   if($(this).is($("#video").parents("li"))){
+      $(this).find("i").css("backgroundPosition","-49px -78px");
+   }else{
+      $("#video").css("backgroundPosition","-49px -99px");
+   }
+      $(".course-hot-nav ul a").css("color","#333");
+      $(this).find("a").css("color","#188eee");
+})
 
  /* /*初始化banner自动切换/
    $("#ban-nav li").eq(0).css("backgroundPosition","-74px -116px");
@@ -200,15 +225,7 @@ function next(){
 
 
 
-	/*微信二维码显示/
-   $("#board-qr,.weixin").hover(function(){
-        $(this).find("img").fadeTo("500",1);
-    },function(){       
-        $(this).find("img").animate({
-        opacity: "hide"
-        },"500");
-   })
-   
+	
 
 })
 
