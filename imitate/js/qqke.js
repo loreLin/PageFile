@@ -144,6 +144,55 @@ $(".course-hot-nav li").hover(function(){
       $(this).find("a").css("color","#188eee");
 })
 
+ /*热门课程导航切换效果*/
+ $("#course-type li").hover(function(){
+    var _index = $(this).index();
+	var $menu = $(".course-hot-menu ul").eq(_index);
+	$menu.stop();
+	$menu.find("li .course-img").stop();
+	$menu.fadeIn("600").show().siblings().hide();
+	/*兼容ie无缝浏览器*/
+    $menu.find("li .course-img").fadeIn("600").show().parents("ul").siblings().find("li .course-img").hide();
+
+ })
+
+ /*职业技能课程选项卡切换*/
+ $(".job-type li").each(function(index){
+    $(this).hover(function(){
+	  var _index = $(this).index();
+	  var $menu = $(".catalog-menu .catalog-menu-div ul").eq(index);
+	  $menu.stop();
+      $menu.find("li .course-img").stop();
+      $menu.fadeIn("600").show().siblings("ul").hide();
+      $(".course-rank").eq(index).show().siblings(".course-rank").hide();
+	})
+ })
+
+ /*职业技能排行选项卡切换*/
+$(".rank-type li").each(function(index){
+   $(this).hover(function(){
+     $(this).addClass("rank-type-sel").siblings().removeClass("rank-type-sel");
+     $(".rank-menu-ul").eq(index).show().siblings().hide();
+   })
+})
+
+
+/*入驻机构切换prev切换*/
+$(".agency-pre").click(function(){
+   $(".agency-list ul").clone().appendTo($(".agency-list"));
+   $(".agency-list ul").animate({left:"-915"},300);
+})
+
+
+/*入驻机构切换next切换*/
+$(".agency-next").click(function(){
+   $(".agency-list ul").clone().appendTo($(".agency-list"));
+   $(".agency-list ul").animate({left:"915"},300);
+})
+
+/*回到顶部小飞机滑动移入特效*/
+
+
  /* /*初始化banner自动切换/
    $("#ban-nav li").eq(0).css("backgroundPosition","-74px -116px");
    loop_banner_change();
