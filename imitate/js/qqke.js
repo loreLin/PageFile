@@ -191,6 +191,70 @@ $(".agency-next").click(function(){
 })
 
 /*回到顶部小飞机滑动移入特效*/
+$(".jump-container-div").mouseover(function(){
+   var $jumpTop = $(".jump-container").find(".jump-top");
+   if($jumpTop.css("opacity")!=undefined && $jumpTop.css("opacity")!=0){
+      $(".jump-top").addClass("jumo-top-hover");
+	  var $plane = $(this).find(".jump-plane");
+	  $plane.stop().show().animate({"top":25},"normal");
+	  topFlag = "";
+
+   }
+   
+})
+
+/*回到顶部小飞机滑动移出特效*/
+$(".jump-container-div").mouseout(function(e){
+	if(!e.target.contains(e.relatedTarget)||e.relatedTarget.contains(e.target)){
+	   var $plane = $(this).find(".jump-plane");
+       $(".jump-top").removeClass("jump-top-hover");
+	   if(!topFlag||topFlag == ""){
+	      $plane.stop().hide().css({"top":82});
+          topFlag = true;
+	   }
+	}
+})
+
+
+/*回到顶部问题反馈特效*/
+$(".jump-container").find(".support").hover(function(){
+  $(".jump-container").find("span").show();
+})
+$(".jump-container").find("span").mouseout(function(){
+   $(this).hide()
+})
+
+
+
+
+ /*回到顶部隐藏显示特效*/
+$(window).scroll(function(){
+   var $jumpTop = $(".jump-container-div").find(".jump-top");
+   if($(this).scrollTop()>0){
+      if($jumpTop.css("opacity")==undefined||$jumpTop.css("opacity")==0){
+         $jumpTop.css({"opacity":0}).fadeTo(500,1);
+         $(".jump-container-div").find("div").stop().fadeTo(500,1).css("top",0);
+         $(".jump-container-div").find(".jump-top").removeClass("jump-top-hover");
+         //$(".jump-container-div").find(".jump-plane").css({"top":82});
+         }
+    }else{
+         $(".jump-container-div").find(".jump-top").fadeTo(500,0);
+         $(".jump-container-div").stop().find("div").fadeTo(500,0);
+        }
+})
+/*回到顶部点击事件*/
+ $(".jump-container-div").find("div .jump-plane").click(function(){
+     $('body,html').animate({scrollTop:0},"normal");
+     $(".jump-container-div").find("div").animate({"top":-1300},"normal",function(){
+         topFlag = false;
+      });
+     topFlag =true;
+})
+
+
+
+
+
 
 
  /* /*初始化banner自动切换/
