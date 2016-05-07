@@ -1,0 +1,62 @@
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+	<head><!--头部-->
+		<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
+		<meta name="Keywords" content="关键词">
+		<meta name="Description" content="描述">
+		<title>css rotate</title>
+		<style>/*css样式表的衣柜*/
+		*{margin:0px;padding:0px;}/*去除默认外边距、内边距*/
+			
+			body{width:272px;margin:0 auto;}
+			.auto{margin-top:40px;}
+			.auto-rotate{
+				color:#333;
+				font-weight:bold;
+				font-family:sans-serif;
+			}
+			span{font-size:40px;color:#000;font-weight:bold;
+			font-family:sans-serif;cursor:pointer;}
+			.anticlockwise{float:left;}
+			.clockwise{float:right}
+			.rotate{width:273px;height:273px;margin:auto;
+			background:url("gqSTTeD.jpg") no-repeat;}
+
+			input:checked ~ .rotate{
+				animation:clockwise 1s steps(30) infinite;/*自定义动画：名称 时间 无限重复*/
+			}
+			input:checked ~ span{
+				display:none;
+			}
+			@keyframes clockwise{
+				0%{
+					background-position:0px 0px;
+				}
+				100%{
+					background-position:-8192px 0px;
+				}
+			}
+			.anticlockwise:hover ~ .rotate{
+				animation:anticlockwise 1s steps(30) infinite;
+			}
+			.clockwise:hover ~ .rotate{
+				animation:clockwise 1s steps(30) infinite;
+			}
+			@keyframes anticlockwise{
+				0%{
+					background-position:-8192px 0px;
+				}
+				100%{
+					background-position:0px 0px;
+				}
+			}
+		</style>
+	</head>
+	<body><!--身体-->
+		<input id="auto" class="auto" type="checkbox" checked / >
+		<label class="auto-rotate" for="auto">Auto &#x21bb;</label><br/>
+		<span class="anticlockwise">&#x2190;</span>
+		<span class="clockwise">&#x2192;</span>
+		<div class="rotate"></div>
+	</body>
+</html>
