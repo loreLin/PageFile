@@ -1,0 +1,79 @@
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+	<head><!--头部-->
+		<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
+		<meta name="Keywords" content="关键词">
+		<meta name="Description" content="描述">
+		<title>css carousel</title>
+		<style>/*css样式表的衣柜*/
+		body{
+			background:#ccc;
+		}
+		#wrap{
+			width:640px;
+			margin:100px auto;
+			box-shadow:0 10px 5px rgba(0,0,0,.7);
+			position:relative;
+			padding-top:320px;
+		}
+		#wrap>img{
+			position:absolute;left:0px;top:0px;
+			transition:all 1s;
+		}
+		img{
+			display:block;
+		}
+		input{
+			display:none;
+		}
+		label{
+			border:10px solid #aaa;
+			margin:20px 3px;
+			float:left;
+			opacity:.5;
+			transition:all 1s;
+		}
+		input:checked + label{
+			border:10px solid #fff;
+			opacity:1;
+		}
+		input ~ img{
+			opacity:0;
+			transform:scale(1.1);
+		}
+		input:checked + label + img{
+			opacity:1;
+			transform:scale(1);
+		}
+		</style>
+	</head>
+	<body><!--身体-->
+		<div id="wrap">
+			<input type="radio" name="checked" id="id1" checked >
+			<label for="id1">
+				<img src="images/1.jpg" width="100">
+			</label>
+			<img src="images/1.jpg" width="640" height="320">
+			<input type="radio" name="checked" id="id2">
+			<label for="id2">
+				<img src="images/2.jpg" width="100">
+			</label>
+			<img src="images/2.jpg" width="640" height="320">
+			<input type="radio" name="checked" id="id3" >
+			<label for="id3">
+				<img src="images/3.jpg" width="100">
+			</label>
+			<img src="images/3.jpg" width="640" height="320">
+			<input type="radio" name="checked" id="id4" >
+			<label for="id4">
+				<img src="images/4.jpg" width="100">
+			</label>
+			<img src="images/4.jpg" width="640" height="320">
+			<input type="radio" name="checked" id="id5" >
+			<label for="id5">
+				<img src="images/5.jpg" width="100">
+			</label>
+			<img src="images/5.jpg" width="640" height="320">
+		</div>
+	</body>
+</html>
