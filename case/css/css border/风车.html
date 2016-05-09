@@ -1,0 +1,70 @@
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+	<head><!--头部-->
+		<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
+		<meta name="Keywords" content="关键词">
+		<meta name="Description" content="描述">
+		<title>windmillt</title>
+		<style>/*css样式表*/
+		div.main{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			margin:50px auto;
+			transition:all 20s;
+			-moz-transition:all 20s;
+			-ms-transition:all 20s;
+			-webkit-transition:all 20s;
+			-o-transition:all 20s;
+		}
+		div.main:hover{
+			transform:rotate(3600deg);
+			-moz-transform:rotate(3600deg);
+			-ms-transform:rotate(3600deg);
+			-webkit-transform:rotate(3600deg);
+			-o-transform:rotate(3600deg);
+		}
+		div.box{
+			width:0px;
+			height: 0px;
+			border:50px solid transparent;
+			border-radius: 50%;
+			position: absolute;
+		}
+		div.f_1{
+			border-bottom-color:HSLA(0,100%,50%,1);
+			border-left-color:HSLA(0,100%,50%,1);
+			top:15px;
+			left: 15px;
+		}
+		div.f_2{
+			border-top-color:HSLA(240,80%,50%,1);
+			border-left-color:HSLA(240,80%,50%,1);
+			top:15px;
+			left: 85px;
+		}
+		div.f_3{
+			border-right-color:HSLA(60,80%,50%,1);
+			border-bottom-color:HSLA(60,80%,50%,1);
+			top:85px;
+			left: 15px;
+		}
+		div.f_4{
+			border-top-color:HSLA(120,100%,50%,1);
+			border-right-color:HSLA(120,100%,50%,1);
+			top:85px;
+			left: 85px;
+		}
+		
+		
+		</style>
+	</head>
+	<body><!--身体-->
+		<div class="main">
+			<div class="f_1 box"></div>
+			<div class="f_2 box"></div>
+			<div class="f_3 box"></div>
+			<div class="f_4 box"></div>
+		</div>
+	</body>
+</html>
