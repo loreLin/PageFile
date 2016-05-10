@@ -1,0 +1,26 @@
+/*header-Start-头部开始*/
+html,body{height:5000px;}
+#header{min-width:1000px;height:90px;font-family:"Microsoft Yahei";}
+#header .siteNav-wrapper{height:36px;line-height:36px;background-color:#000;}
+#header .siteNav{width:1000px;height:36px;margin:0 auto;position:relative;}
+#header .siteNav-icon{width:23px;height:18px;background:red;float:left;margin-top:10px;background:url('../images/icon.png');}
+#header .icon-weibo{background-position: -139px 0;margin-left:10px;margin-right:8px;}
+#header .icon-weixin{position:relative;background-position:42px 0;margin-left:18px;margin-right:18px;}
+#header .icon-weixin img{position:absolute;left:0;top:25px;z-index:200;border:1px solid black;display:none;}
+#header .icon-weixin:hover img{display:block}
+#header .siteNav-group{padding:0 14px;color:#afafaf;font-size:14px;border-left:1px solid #929292;line-height:16px;float:left;margin-top:10px;}
+#header .fontColor{color:#bb9a6c}
+#header .fontColor .italic{font-style:italic;font-family:'Times New Roman';}
+
+/*header-search Strat-头部搜索开始*/
+#header .head-search{height:28px;background:#353535;float:left;margin-top:4px;}
+#header .head-search input[type="text"]{width:170px;height:28px;border:none;outline:none;margin-left:5px;color:#fff;line-height:28px;float:left;background:transparent;transition:width 0.5s;border-right:1px solid #898989;}
+#header .head-search input[type="text"]:focus{width:260px;}
+#header .head-search .search-submit{width:19px;height:19px;float:left;background:url("../images/icon.png") -185px 0;margin:5px;border:none;outline:none;}
+/*header-search Strat-头部搜索结束*/
+
+/*--header-Login Start--*/
+#header #header-login-box{display:block}
+#header .user-action{position:absolute;padding:0 10px;font-size:14px;color:#afafaf}
+#header .login{right:60px}
+#header .register{right:10px}

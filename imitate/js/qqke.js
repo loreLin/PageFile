@@ -76,7 +76,21 @@ $(".big-banner-img").hover(function(){
 });
 
 
-
+/*banner图左侧按钮滑动变换样式 */
+$(".ban-pre").hover(function(){
+   $(".ban-pre,.ban-next").show();
+   $(this).css("backgroundPosition","-172px 0");
+},function(){
+   $(this).css("backgroundPosition","-74px 0");
+})
+/*banner图右侧按钮滑动变换样式 */
+$(".ban-next").hover(function(){
+   $(".ban-pre,.ban-next").show();
+   $(this).css("backgroundPosition","0 -57px");
+},function(){
+   $(this).css("backgroundPosition","-123px 0");
+})
+	
 
 //自动轮播
 function autoPlay(){
@@ -278,27 +292,7 @@ $(window).scroll(function(){
 
   
 
-   /*banner图左侧按钮滑动变换样式 /
-   $(".ban-pre").hover(function(){
-      $(".ban-pre,.ban-next").show();
-      $(this).css("backgroundPosition","-172px 0");
-      if(timer){
-         clearInterval(timer);
-      }
-    },function(){
-      $(this).css("backgroundPosition","-74px 0");
-    })
-   /*banner图右侧按钮滑动变换样式 /
-   $(".ban-next").hover(function(){
-      $(".ban-pre,.ban-next").show();
-      $(this).css("backgroundPosition","0 -57px");
-      if(timer){
-         clearInterval(timer);
-      }
-    },function(){
-      $(this).css("backgroundPosition","-123px 0");
-    })
-	
+   
 
 	/*banner图底部按钮触发保持左右侧按钮显示 /
     $("#ban-nav").hover(function(){
