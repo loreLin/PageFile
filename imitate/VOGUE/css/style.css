@@ -1,5 +1,9 @@
-/*header-Start-头部开始*/
 html,body{height:5000px;}
+ul,li{list-style:none;}
+.clearfix{zoom:1;}
+
+
+/*header-Start-头部开始*/
 #header{min-width:1000px;height:90px;font-family:"Microsoft Yahei";}
 #header .siteNav-wrapper{height:36px;line-height:36px;background-color:#000;}
 #header .siteNav{width:1000px;height:36px;margin:0 auto;position:relative;}
@@ -8,15 +12,18 @@ html,body{height:5000px;}
 #header .icon-weixin{position:relative;background-position:42px 0;margin-left:18px;margin-right:18px;}
 #header .icon-weixin img{position:absolute;left:0;top:25px;z-index:200;border:1px solid black;display:none;}
 #header .icon-weixin:hover img{display:block}
-#header .siteNav-group{padding:0 14px;color:#afafaf;font-size:14px;border-left:1px solid #929292;line-height:16px;float:left;margin-top:10px;}
+#header .siteNav-group{padding:0 14px;color:#afafaf;font-size:14px;border-left:1px solid #929292;line-height:16px;
+                float:left;margin-top:10px;}
 #header .fontColor{color:#bb9a6c}
 #header .fontColor .italic{font-style:italic;font-family:'Times New Roman';}
 
 /*header-search Strat-头部搜索开始*/
 #header .head-search{height:28px;background:#353535;float:left;margin-top:4px;}
-#header .head-search input[type="text"]{width:170px;height:28px;border:none;outline:none;margin-left:5px;color:#fff;line-height:28px;float:left;background:transparent;transition:width 0.5s;border-right:1px solid #898989;}
+#header .head-search input[type="text"]{width:170px;height:28px;border:none;outline:none;margin-left:5px;
+     color:#fff;line-height:28px;float:left;background:transparent;transition:width 0.5s;border-right:1px solid #898989;}
 #header .head-search input[type="text"]:focus{width:260px;}
-#header .head-search .search-submit{width:19px;height:19px;float:left;background:url("../images/icon.png") -185px 0;margin:5px;border:none;outline:none;}
+#header .head-search .search-submit{width:19px;height:19px;float:left;background:url("../images/icon.png") -185px 0;
+               margin:5px;border:none;outline:none;}
 /*header-search Strat-头部搜索结束*/
 
 /*--header-Login Start--*/
@@ -24,5 +31,44 @@ html,body{height:5000px;}
 #header .user-action{position:absolute;padding:0 10px;font-size:14px;color:#afafaf}
 #header .login{right:60px}
 #header .register{right:10px}
-
 /*--header-Login End--*/
+
+
+
+/*--newNav-Start*/
+#header .nav-wrapper{height:51px;border-top:2px solid #e1e1e1;border-bottom:2px solid #e1e1e1;background:#fff;}
+#header .nav-wrapper .nav{width:1000px;margin:0 auto;font-size:16px;}
+#header .nav ul{float:left;margin-top:18px;}
+#header .nav li{float:left;line-height:16px;border-right:1px solid #c1c3c3}
+#header .nav li a{color:#000;padding:0 13px;}
+
+
+/*nav-part-Start*/
+#header .nav-part2{float:left;line-height:35px;border-right:1px solid #c1c3c3;margin-top:7px;}
+#header .nav-part2 a{color:#000;padding-left:16px}
+#header .nav-part2 a.last{padding-right:16px;}
+#header .nav-part2 a.font-discovery{color:red}
+#header .nav-part3{float:left;font-size:12px;line-height:24px;width:90px;}
+#header .nav-part3 a{padding-left:15px;color:#000}
+/*nav-part-Start*/
+
+/*#header-sideNav-Start*/
+#header .subnav{position:relative;}
+#header .sub-item{width:185px;position:absolute;display:none;top:37px;z-index:100;}
+#header .sub-item1{left: 57px;}
+#header .sub-item2{left: 114px;}
+#header .sub-item3{left: 172px;}
+#header .sub-item4{left: 230px;}
+#header .sub-item5{left: 289px;}
+#header .sub-item6{left: 361px;}
+#header .sub-item7{left: 437px;}
+#header .sub-item8{left: 494px;}
+#header .sub-item .item-head{height:16px;background:url("../images/nav-item-header.png") no-repeat;}
+#header .sub-item .item-body{padding-top:16px;background:url("../images/nav-item-body.png") repeat-y;}
+#header .sub-item .item-bottom{height:7px;background:url("../images/nav-item-footer.png");}
+#header .item-body .list{width:165px;height:31px;border-bottom:1px dashed #c1c3c3;margin:auto;line-height:31px;text-indent:10px;font-size:14px;position:relative;}
+#header .item-body .list a{color:#545454;}
+#header .item-body .list:hover a{color:#ce0000}
+#header .item-body .list span{position:absolute;top:0;right:30px;opacity:0;filter:alpha(opacity=0);transition: all 0.5s;}
+#header .item-body .list:hover span{opacity:1;color:#ce0000;right:10px;filter:alpha(opacity=100);}
+
