@@ -1,5 +1,6 @@
 html,body{height:5000px;}
-body,ul,li,input,p,a,img,span{padding:0;margin:0;}
+body,ul,li,input,p,a,img,span,i{padding:0;margin:0;}
+a{}
 ul,li{list-style:none;}
 .clearfix{zoom:1;}
 
@@ -91,13 +92,24 @@ ul,li{list-style:none;}
 .index-slide .main{overflow:hidden;width:100%;min-width:1000px;height:605px;position:relative;}
 .index-slide .swiper-container{height:564px;width:1000px;position:relative;}
 .swiper-container{margin:0 auto;backface-visibility:hidden;}
-/*.swiper-wrapper{width:1000%;margin-left:-100%}*/
-.invogue .swiper-container{overflow:hidden;}
+.swiper-wrapper{width:1000%;margin-left:-100%}
 
-.index-slide .title-mask{background:url("../images/slide-mask.png");height:95px;width:100%;position:absolute;bottom:20px;left:0;text-align:center;}
+.index-slide .title-mask{background:url("../images/slide-mask.png");height:95px;width:100%;position:absolute;
+                bottom:20px;left:0;text-align:center;}
 .index-slide .title-mask a{font-size:30px;line-height:60px;color:white;text-shadow:0 1px 3px #000}
 .index-slide .title-mask .des{color:#fff;font-size:14px;}
+.swiper-slide{position:relative;float:left;}
+.index-slide .swiper-slide{width:1000px;height:564px;position:relative;}
+.swiper-slide img{display:block;}
 
+.arrow{width:57px;height:73px;position:absolute;top:50%;margin-top:-36px;cursor:url("../images/mouse.cur"),auto;z-index:1000;}
+.arrow .arrow-bg{height:73px;background:url("../images/element.png") 0 -224px;opacity:0;transition:all 0.5s}
+.arrow i{width:57px;height:73px;position:absolute;left:0;top:0;background:url("../images/element.png")}
+.pre-arrow{left:0;}
+.pre-arrow i{background-position:0 -78px;}
+.next-arrow{right:0;}
+.next-arrow i{background-position:0 -150px;}
+.swiper-container:hover .arrow-bg{opacity:1;}
 
 /*遮罩层-开始*/
 .swiper-container .slide-mask{width:1000px;height:564px;background:#000;opacity:0.6;position:absolute;right:1000px;top:0}
@@ -105,6 +117,12 @@ ul,li{list-style:none;}
 /*遮罩层-结束*/
 
 
+/*公用分布按钮部分*/
+.pagination{width:100%;position:absolute;bottom:-35px;z-index:2;text-align:center;}
+.index-slide .pagination{bottom:51px;}
+.swiper-pagination-switch{width:9px;height:9px;display:inline-block;margin:0 8px;background:#BFBFBF;border-radius:50%;cursor:pointer;}
+.swiper-pagination-color{background:#BF0000;}
+/*slide-Start*/
 
 
 
