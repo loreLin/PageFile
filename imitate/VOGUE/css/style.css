@@ -143,18 +143,22 @@ iframe{display:block;}
                 bottom:20px;left:0;text-align:center;}
 .index-slide .title-mask a{font-size:30px;line-height:60px;color:white;text-shadow:0 1px 3px #000}
 .index-slide .title-mask .des{color:#fff;font-size:14px;}
+
+
+/*slide-Start*/
 .swiper-slide{position:relative;float:left;}
 .index-slide .swiper-slide{width:1000px;height:564px;position:relative;}
 .swiper-slide img{display:block;}
 
 .arrow{width:57px;height:73px;position:absolute;top:50%;margin-top:-36px;cursor:url("../images/mouse.cur"),auto;z-index:1000;}
-.arrow .arrow-bg{height:73px;background:url("../images/element.png") 0 -224px;opacity:0;transition:all 0.5s}
+.arrow .arrow-bg{height:73px;background:url("../images/element.png") 0 -224px;opacity:0;transition:all 0.5s;}
 .arrow i{width:57px;height:73px;position:absolute;left:0;top:0;background:url("../images/element.png")}
 .pre-arrow{left:0;}
 .pre-arrow i{background-position:0 -78px;}
 .next-arrow{right:0;}
 .next-arrow i{background-position:0 -150px;}
 .swiper-container:hover .arrow-bg{opacity:1;}
+/*slide-end*/
 
 /*遮罩层-开始*/
 .swiper-container .slide-mask{width:1000px;height:564px;background:#000;opacity:0.6;position:absolute;right:1000px;top:0}
@@ -167,7 +171,55 @@ iframe{display:block;}
 .index-slide .pagination{bottom:51px;}
 .swiper-pagination-switch{width:9px;height:9px;display:inline-block;margin:0 8px;background:#BFBFBF;border-radius:50%;cursor:pointer;}
 .swiper-pagination-color{background:#BF0000;}
-/*slide-Start*/
 
 
+/*whats-new开始*/
+a{color:#000;}
+a:hover{color:red;}
+.module{min-width:1000px;}
+.whats-new{margin-bottom:50px;}
+.module-hd{position:relative;}
+.module-hd a{font-size:16px;color:#555;}
+.module-hd .line{width:100%;height:45px;border-bottom:1px solid #d8d8d8;position:absolute;}
+.module-hd .inner-wrapper{width:1000px;margin:0 auto;position:relative;}
+.whats-new .module-hd .inner-wrapper .module-title{width:320px;}
+.module-title{margin:0 auto;position:relative;}
+.whats-new .inner-wrapper a{display:block;height:87px;background:url(../images/title-common.jpg) -10px 0 no-repeat;}
+.inner-wrapper h2 a{margin:0 auto;display:block;text-indent:-9999px;}
+.slide-ads-wrapper{width:100%;height:24px;position:absolute;top:17px;}
+.slide-ads-wrapper .slide-ads{width:100%;position:absolute;left:0;}
+.slide-ads > div{width:1000px;height:24px;position:relative;margin:0 auto;}
+.sub-links{width:340px;height:20px;position:absolute;}
+.left-top{left:0;text-align:right;}
+.left-top a{margin-right:15px;}
+.right-top{right:0;}
+.right-top a{margin-right:15px;text-align:left}
+.sub-links a.close{margin:0;}
 
+.module-bd{width:1000px;margin:40px auto 0;position:relative;}
+.whats-new .module-bd{width:1000px;}
+.imgcards{width:270px;border:1px solid #d8d8d8;float:left;margin-right:44px;-webkit-transition:all 0.2s;padding: 12px 16px 0;}
+.imgcards:hover{box-shadow:0 0 9px #666}
+.imgcards img{display:block;}
+.imgcards .img span {line-height:56px;font-size:16px;overflow:hidden;height:56px;display:block;text-overflow:ellipsis;white-space:nowrap;}
+
+
+.topic-list{border:1px solid #d8d8d8;width:270px;padding:12px 16px 14px;}
+.fr{position:absolute;right:0;}
+.tl-content{padding-top: 12px;}
+.topic-list li{height:16px;line-height:16px;font-size:14px;margin-bottom:14px;padding-left:32px;}
+.num{background:url(../images/num.png) no-repeat}
+.num2{background-position:0 -30px;}
+.num3{background-position:0 -60px;}
+.num4{background-position:0 -90px;}
+.num5{background-position:0 -120px;}
+.num6{background-position:0 -150px;}
+.num7{background-position:0 -180px;}
+.num8{background-position:0 -210px;}
+.num9{background-position:0 -240px;}
+.num10{	background-position:0 -270px;}
+/* 今日推荐-结束*/
+
+
+/*【潮流服饰】开始*/
+.module-one{min-width:1000px;}
