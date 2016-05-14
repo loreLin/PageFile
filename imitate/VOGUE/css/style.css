@@ -84,6 +84,7 @@ iframe{display:block;}
 
 /*--newNav-Start*/
 #header .nav-wrapper{height:51px;border-top:2px solid #e1e1e1;border-bottom:2px solid #e1e1e1;background:#fff;}
+#header .fix-wrapper{position:fixed;width:100%;top:0;z-index:9999;}
 #header .nav-wrapper .nav{width:1000px;margin:0 auto;font-size:16px;}
 #header .nav ul{float:left;margin-top:18px;}
 #header .nav li{float:left;line-height:16px;border-right:1px solid #c1c3c3}
