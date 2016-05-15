@@ -52,7 +52,7 @@ $(document).scroll(function(){
 	 if(ScrollTop >= _height){
 		$(".nav-wrapper").addClass("fix-wrapper");
 	 }else{
-		(".nav-wrapper").removeClass("fix-wrapper");
+		$(".nav-wrapper").removeClass("fix-wrapper");
 	 }
      if(ScrollTop==0){
 		$(".nav-wrapper").removeClass("fix-wrapper");
@@ -61,12 +61,110 @@ $(document).scroll(function(){
  });
 
 
-/*Banner-1无缝滚动开始*/
-  function bannerAuto($next , $prep , $span , $wrap , $box ){
-	 // 下一张按钮  前一张按钮 底部按钮 图片盒子 外层盒子
-    
+/*Banner-1无缝滚动*/
+	var index=1;
+	var $slide=$(".index-slide .swiper-slide");
+	
+	$(".main .arrow").click(function(){
+		if(new Date()-nowTime>1000){
+			nowTime=new Date();
+		
+			var arrIndex =$(this).index();
+			//alert(arrIndex)
+			if(arrIndex==2){
+				index++;
+			}else{
+				index--;	
+			}
+			$(".swiper-wrapper").animate({
+				marginLeft: -index*$slide.width()+'px'
+				},1000,function(){
+					if(index==$slide.length-1){
+					    index = 1;
+						$(".swiper-wrapper").css("marginLeft",-$slide.width()+'px');
+					}else if(index ==0){
+						index=$slide.length-2;
+						$(".swiper-wrapper").css("marginLeft",-index*$slide.width()+'px')
+					}
+				})
+		}	
+	});
 
-	 var index=0;
-	 var 
-  
- }
+
+/*var nindex = 0;
+var qindex = 0;
+var clearTime = null;
+var $slide = $(".swiper-slide");
+alert($slide.width());
+$(".pagination span").mouseover(function(){
+   clearInterval(clearTime);
+   nindex=$(this).index();
+   scrollPlay();
+   qindex=nindex;
+}).mouseout(function(){
+   autoPlay();
+});
+
+//左切换按扭
+$("pre-arrow").click(function(){
+   nindex--;
+   if(nindex<0){
+     qindex=0;
+
+	 nindex=8;
+   }
+   scrollPlay();
+   qindex=nindex;
+});
+
+//右切换按扭
+$(".next-arrow").click(function(){
+	_index++;//序列号加1
+	if(_index>8){
+		_index=0;
+		_qindex=8;
+	}
+	scrollPlay();
+	_qindex=_index;
+
+});
+
+
+autoPlay();//一开始就要自动轮播
+//自动轮播
+function autoPlay(){
+	clearTime=setInterval(function(){
+		nindex++;//序列号加1
+
+		if(nindex=>10){
+			nindex=0;
+			qindex=8;
+		}
+		scrollPlay();
+		qindex=nindex;
+
+	},2000);
+
+};
+function scrollPlay(){
+	if(nindex==0 && qindex==8){
+		next();
+	}else if(nindex==8 && qindex==0){
+		prev();
+	}else if(nindex>qindex){//左移
+		next();
+	}else if(nindex<qindex){//往右移
+		prev();
+	}
+
+}
+
+//下一张，左移
+function next(){
+	 $(".swiper-wrapper").css("marginLeft",-$slide.width()+'px')
+};
+
+//上一张 ，右移
+function prev(){
+	 $(".swiper-wrapper").css("marginLeft",$slide.width()+'px')
+};*/

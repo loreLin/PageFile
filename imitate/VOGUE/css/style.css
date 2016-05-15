@@ -138,7 +138,8 @@ iframe{display:block;}
 .index-slide .main{overflow:hidden;width:100%;min-width:1000px;height:605px;position:relative;}
 .index-slide .swiper-container{height:564px;width:1000px;position:relative;}
 .swiper-container{margin:0 auto;backface-visibility:hidden;}
-.swiper-wrapper{width:1000%;margin-left:-100%}
+.swiper-wrapper{width:1000%;}
+.invogue .swiper-container{overflow:hidden;}
 
 .index-slide .title-mask{background:url("../images/slide-mask.png");height:95px;width:100%;position:absolute;
                 bottom:20px;left:0;text-align:center;}
@@ -202,7 +203,6 @@ a:hover{color:red;}
 .imgcards{width:270px;border:1px solid #d8d8d8;float:left;margin-right:44px;-webkit-transition:all 0.2s;padding: 12px 16px 0;}
 .imgcards:hover{box-shadow:0 0 9px #666}
 .imgcards img{display:block;}
-.imgcards .img span {line-height:56px;font-size:16px;overflow:hidden;height:56px;display:block;text-overflow:ellipsis;white-space:nowrap;}
 
 
 .topic-list{border:1px solid #d8d8d8;width:270px;padding:12px 16px 14px;}
@@ -224,3 +224,33 @@ a:hover{color:red;}
 
 /*【潮流服饰】开始*/
 .module-one{min-width:1000px;}
+.invogue{margin-bottom:50px;background-color:black;}
+.invogue .module-hd{padding-top:30px;padding-bottom:25px;}
+.invogue .module-hd .module-title{width:334px;}
+.invogue .module-hd h2 a{height:88px;background:url(../images/title-index-2.jpg) no-repeat 0 0;}
+.invogue .module-hd .sub-links{width:333px;}
+.invogue .module-hd .sub-links a{color:#bcbcbc;display:inline}
+.invogue .module-hd .sub-links a:hover{color:white;}
+.invogue .module-hd .sub-links em{color:#404040}
+.module-hd .left-bottom, .module-hd .right-bottom{top:50px;}
+.module-hd .left-top, .module-hd .left-bottom {left:0;text-align:right;}
+.module-hd .right-top, .module-hd .right-bottom {right:0;text-align:left;}
+.module-one .main{width:685px;height:500px;float:left;}
+.module-one .side{float:right;}
+.invogue .swiper-container{width:685px;height:500px;position:relative;overflow:hidden;}
+
+
+/*【潮流服饰】结束*/
+
+
+/*【潮流服饰二级栏目】开始*/
+.module-extend .img-cards{margin-top:45px;padding-bottom:45px;}
+.imgcards .title{display:block;line-height:24px;padding-bottom:12px;font-weight:bolder;font-size:18px;}
+.imgcards .title em{width:9px;height:17px;background:url(../images/element.png) no-repeat;display:block;float:right;}
+.imgcards .title span{font-size:16px;font-weight: normal;}
+.imgcards .img span {line-height:56px;font-size:16px;overflow:hidden;height:56px;display:block;text-overflow:ellipsis;white-space:nowrap;}
+.topic-list .title {font-size:18px;padding-bottom:12px;font-weight:bolder;display:block;}
+.topic-list .tl-noborder{border-top: 1px solid #e3e3e3;}
+/*【潮流服饰二级栏目】结束*/
+
+
