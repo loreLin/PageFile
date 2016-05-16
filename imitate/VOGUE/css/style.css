@@ -138,7 +138,7 @@ iframe{display:block;}
 .index-slide .main{overflow:hidden;width:100%;min-width:1000px;height:605px;position:relative;}
 .index-slide .swiper-container{height:564px;width:1000px;position:relative;}
 .swiper-container{margin:0 auto;backface-visibility:hidden;}
-.swiper-wrapper{width:1000%;}
+.swiper-wrapper{width:1000%;margin-left:-100%;}
 .invogue .swiper-container{overflow:hidden;}
 
 .index-slide .title-mask{background:url("../images/slide-mask.png");height:95px;width:100%;position:absolute;
@@ -254,3 +254,18 @@ a:hover{color:red;}
 /*【潮流服饰二级栏目】结束*/
 
 
+/* 【至美鞋包】开始 */
+.shoes{margin-bottom: 50px;}
+.module-two{min-width: 1000px;}
+.shoes .module-hd{margin-bottom: 35px;}
+.shoes .line{height:12px;}
+.shoes .module-hd h2 a{height: 25px;background: url(../images/title-index-2.jpg) 0 -92px no-repeat;}
+.shoes .module-hd .module-title { width: 298px;}
+.module-two .main{float: left;width: 652px;height: 340px;}
+.module-two .has-border .main{ width: 650px; height: 338px; border: 1px solid #c1c1c1;overflow:-hidden;}
+.shoes .swiper-container{width:652px;height:340px;position:relative;overflow:hidden;}
+.module-two .main .title-mask {height: 60px;width: 652px; position: absolute;bottom: 20px;text-align: center;background: url(../images/mask-652.png);line-height: 60px;}
+.module-two .main .title-mask a{color: #fff;font-size: 30px;display: block;text-shadow: 1px 1px 3px #000;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.module-two .has-border .side.ad {width: 304px;height: 340px;border: none;overflow: hidden;}
+/* .module-two .has-border .side { width: 302px;height: 338px;border: 1px solid #c1c1c1;overflow: hidden;} */
+/* 【至美鞋包】结束 */

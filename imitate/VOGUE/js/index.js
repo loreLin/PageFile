@@ -63,26 +63,28 @@ $(document).scroll(function(){
 
 /*Banner-1无缝滚动*/
 	var index=1;
+	
 	var $slide=$(".index-slide .swiper-slide");
 	
 	$(".main .arrow").click(function(){
-		if(new Date()-nowTime>1000){
+      //  alert(nowTime,new Date());
+		if(new Date()-nowTime>500){
 			nowTime=new Date();
-		
-			var arrIndex =$(this).index();
-			//alert(arrIndex)
+			
+			var arrIndex = $(this).index();
 			if(arrIndex==2){
 				index++;
-			}else{
-				index--;	
+			}else if(arrIndex==1){
+				index--;
 			}
-			$(".swiper-wrapper").animate({
+			//alert(index);
+			$(".index-slide .swiper-wrapper").animate({
 				marginLeft: -index*$slide.width()+'px'
 				},1000,function(){
 					if(index==$slide.length-1){
 					    index = 1;
 						$(".swiper-wrapper").css("marginLeft",-$slide.width()+'px');
-					}else if(index ==0){
+					}else if(index == 0){
 						index=$slide.length-2;
 						$(".swiper-wrapper").css("marginLeft",-index*$slide.width()+'px')
 					}
@@ -90,81 +92,20 @@ $(document).scroll(function(){
 		}	
 	});
 
+    $(".pagination span").mouseover(function(){
+		
+		index = $(this).index()-1;
+		var $span = $("span");
+		
+		if ( index >= $span.length )
+			{
+				$span.eq(0).addClass('swiper-pagination-color').siblings().removeClass('swiper-pagination-color');
+			}else if ( index < 0 )
+			{
+				$span.eq($span.length-1).addClass('swiper-pagination-color').siblings().removeClass('swiper-pagination-color');
+			}else{
+				$span.eq(index).addClass('swiper-pagination-color').siblings().removeClass('swiper-pagination-color');
+			}
+	  
+	});
 
-/*var nindex = 0;
-var qindex = 0;
-var clearTime = null;
-var $slide = $(".swiper-slide");
-alert($slide.width());
-$(".pagination span").mouseover(function(){
-   clearInterval(clearTime);
-   nindex=$(this).index();
-   scrollPlay();
-   qindex=nindex;
-}).mouseout(function(){
-   autoPlay();
-});
-
-//左切换按扭
-$("pre-arrow").click(function(){
-   nindex--;
-   if(nindex<0){
-     qindex=0;
-
-	 nindex=8;
-   }
-   scrollPlay();
-   qindex=nindex;
-});
-
-//右切换按扭
-$(".next-arrow").click(function(){
-	_index++;//序列号加1
-	if(_index>8){
-		_index=0;
-		_qindex=8;
-	}
-	scrollPlay();
-	_qindex=_index;
-
-});
-
-
-autoPlay();//一开始就要自动轮播
-//自动轮播
-function autoPlay(){
-	clearTime=setInterval(function(){
-		nindex++;//序列号加1
-
-		if(nindex=>10){
-			nindex=0;
-			qindex=8;
-		}
-		scrollPlay();
-		qindex=nindex;
-
-	},2000);
-
-};
-function scrollPlay(){
-	if(nindex==0 && qindex==8){
-		next();
-	}else if(nindex==8 && qindex==0){
-		prev();
-	}else if(nindex>qindex){//左移
-		next();
-	}else if(nindex<qindex){//往右移
-		prev();
-	}
-
-}
-
-//下一张，左移
-function next(){
-	 $(".swiper-wrapper").css("marginLeft",-$slide.width()+'px')
-};
-
-//上一张 ，右移
-function prev(){
-	 $(".swiper-wrapper").css("marginLeft",$slide.width()+'px')
-};*/
