@@ -297,3 +297,9 @@ a:hover{color:red;}
 /* 【热闹关注专题】结束 */
 
 
+ /*【广告部分1】开始*/
+.ad-scroll{width:100%;overflow:hidden;zoom:1;}
+.adsame-678{width:1000px;height:200px;margin:0 auto 20px;}
+/*【广告部分1】结束*/
+
+
