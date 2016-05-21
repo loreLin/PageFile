@@ -1,0 +1,106 @@
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+	<head><!--头部-->
+		<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
+		<meta name="Keywords" content="关键词">
+		<meta name="Description" content="描述">
+		<title>Document</title>
+		<style id="css">/*css样式表的衣柜*/
+		*{margin:0px;padding:0px;}
+		#box{
+			width:800px;height:360px;margin:100px auto;
+			position:relative;
+		}
+		ul{width:800px;height:360px;list-style:none;perspective:800px;}
+		ul li{
+			height:360px;width:200px;transform-style:preserve-3d;
+			transform:translateZ(-180px) rotateX(0deg);
+			position:relative;float:left;
+		}
+		ul li div{
+			height:360px;position:absolute;
+		}
+		ul li div:nth-child(1){
+			transform:translateZ(180px) rotateX(90deg);
+			left:0px;top:-360px;
+			transform-origin:bottom;
+			background:url("img/3D1.jpg");
+
+		}
+		ul li div:nth-child(2){
+			transform: translateZ(180px) rotateX(-90deg);
+			left:0px;top:360px;
+			transform-origin:top;
+			background:url("img/3D2.jpg");
+
+		}
+		ul li div:nth-child(3){
+			transform:translateZ(180px);
+			background:url("img/3D3.jpg");
+			left:0px;top:0px;
+
+		}
+		ul li div:nth-child(4){
+			transform:translateZ(-180px) rotateX(-180deg);
+			background:url("img/3D4.jpg");
+			left:0px;top:0px;
+
+		}
+		ul li div:nth-child(5){
+			transform:translateZ(180px) rotateY(90deg);
+			left:0px;top:0px;
+			transform-origin:left;
+			
+		}
+		ul li div:nth-child(6){
+			transform:translateZ(180px) rotateY(-90deg);
+			left:0px;top:0px;
+			transform-origin:right;
+
+		}
+		ol{width:200px;height:20px;position:absolute;right:0px;bottom:0px;
+		list-style:none;}
+		ol li{width:20px;height:20px;border-radius:50%;background:#000;float:left;
+		margin-left:10px;color:#fff;text-align:center;line-height:20px;}
+		</style>
+	</head>
+	<body><!--身体-->
+		<div id="box">
+			<ul>
+			</ul>
+			<ol>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+
+			</ol>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script>
+			function rotate(n){
+				var lw = 800/n;//具体每个li的宽度
+				var html = "";
+				var css = "";
+				var z = 0;
+				for (var i = 0;i<n ;i++ )
+				{
+					if (i>n/2){z--}else{z++}
+					html +="<li><div></div><div></div><div></div><div></div><div></div><div></div></li>";
+					css +="ul li:nth-child("+(i+1)+"){transition:1s "+(i*0.08)+"s;z-index:"+z+";}ul li:nth-child("+(i+1)+") div{background-position:"+(-i*lw)+"px 0px;}";
+					//console.log(1);
+				}
+				$("#css").append("ul li{width:"+lw+"px;}ul li div{width:"+lw+"px;}"+css);
+				
+				$("ul").append(html);
+				//alert(1);
+			}
+			rotate(20);
+			$("ol li").click(function(){
+				var index = $(this).index();
+				var i = -index*90 +"deg";
+				$("ul li").css("transform","translateZ(-180px) rotateX("+i+")");
+			});
+		</script>
+	</body>
+</html>
