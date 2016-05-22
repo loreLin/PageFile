@@ -236,10 +236,8 @@ a:hover{color:red;}
 .module-hd .left-bottom, .module-hd .right-bottom{top:50px;}
 .module-hd .left-top, .module-hd .left-bottom {left:0;text-align:right;}
 .module-hd .right-top, .module-hd .right-bottom {right:0;text-align:left;}
-.module-one .main{width:685px;height:500px;float:left;}
-.module-one .side{float:right;}
 .invogue .swiper-container{width:685px;height:500px;position:relative;overflow:hidden;}
-
+.module-one .title-mask{position:absolute;bottom:20px;text-align:center;}
 
 /*【潮流服饰】结束*/
 
@@ -301,5 +299,31 @@ a:hover{color:red;}
 .ad-scroll{width:100%;overflow:hidden;zoom:1;}
 .adsame-678{width:1000px;height:200px;margin:0 auto 20px;}
 /*【广告部分1】结束*/
+
+
+/* 【发现】开始 */
+.discovery{margin-bottom:50px;background-color: #b10101;}
+.discovery .module-hd {padding-top: 30px;padding-bottom: 25px;}
+.discovery .module-hd .module-title {width: 499px;}
+.discovery .module-hd h2 a {height: 90px;background: url(../images/title-index-2.jpg) 0 -119px no-repeat;}
+.discovery .swiper-container {width: 1000px;height: 500px; position: relative;overflow: hidden;}
+.module-one .side .title-mask {width: 300px; height: 95px;background: url(../images/mask300.png);}
+.module-one .side .title-mask a { color: #fff;font-size: 20px;display: block; width: 240px; margin: 25px auto;text-align: left;text-shadow: 1px 1px 3px #000;}
+.discovery .swiper-slide{width:1000px;height:500px;position:relative;}
+.discovery .module-bd{margin:0 auto;}
+.module-one .main{width:685px;height:500px;float:left;}
+.module-one .main .title-mask{width:685px;height:95px;background:url(../images/slide-mask.png);}
+.module-one .main .title-mask a {color: #fff;font-size: 30px; display: block;margin: 20px auto 15px auto;text-shadow: 1px 1px 3px #000;white-space: nowrap;text-overflow: ellipsis; overflow: hidden;line-height: 30px;}
+.module-one .main .title-mask .des { color: #fff;font-size: 14px;width: 645px; overflow: hidden;margin: 0 auto; white-space: nowrap; text-overflow:ellipsis;}
+.module-one .side{float:right;}
+/* 【发现】结束 */
+
+
+/* 【发现二级栏目】开始 */
+.topic-list .title span {font-size: 16px;font-weight: normal;}
+.topic-list .tl-links {padding-bottom: 7px;height: 233px;overflow: hidden;}
+.tl-content {padding-top: 12px;}
+.topic-list .tl-links a {float: left; margin-right: 15px;font-size: 14px;white-space: nowrap;}
+/*【发现二级栏目】结束*/
 
 
