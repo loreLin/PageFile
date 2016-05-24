@@ -327,3 +327,17 @@ a:hover{color:red;}
 /*【发现二级栏目】结束*/
 
 
+/* 【时装行业】开始 */
+.fasion {margin-bottom: 50px;}
+.fasion .module-hd {margin-bottom: 35px;}
+.fasion .module-hd .module-title {width: 258px;}
+.fasion .module-hd h2 a {height: 87px;background: url(../images/title-index-2.jpg) 0 -215px no-repeat;}
+.fasion .module-hd .sub-links {width: 371px;}
+.module-hd .sub-links {position: absolute;height: 20px;font-size: 16px;color: #555;}
+.fasion .module-hd .sub-links a{display:inline}
+.fasion .module-hd .sub-links a:hover{color:#e00024;}
+.module-one .has-border .main {width: 683px;height: 498px;border: 1px solid #c1c1c1;}
+.fasion .swiper-container {width: 685px;height: 500px;position: relative;overflow: hidden;}
+.module-one .has-border .side {width: 298px;height: 498px;border: px solid #c1c1c1;overflow: hidden;}
+.module-one .has-border .side.ad {width: 300px;height: 500px;border: none;overflow: hidden;}
+/* 【时装行业】结束 */
