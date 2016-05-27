@@ -341,3 +341,15 @@ a:hover{color:red;}
 .module-one .has-border .side {width: 298px;height: 498px;border: px solid #c1c1c1;overflow: hidden;}
 .module-one .has-border .side.ad {width: 300px;height: 500px;border: none;overflow: hidden;}
 /* 【时装行业】结束 */
+
+
+/* 【时装发布】开始 */
+.designers {margin-bottom: 50px;background-color: #000;}
+.designers .module-hd {padding-top: 30px;padding-bottom: 25px;position: relative;}
+.designers .module-hd .module-title {width: 460px;}
+.designers .module-hd h2 a {height: 90px;background: url(../images/title-index-2.jpg) -7px -862px no-repeat;}
+.designers .module-hd .sub-links {width: 270px;height: 35px;line-height: 35px;top: 46px;color: #bcbcbc;}
+.designers .module-hd .sub-links a {display:inline-block;color: #bcbcbc;}
+.designers .module-hd  .left-bottom em {padding: 0px;}
+.designers .right-bottom > div {width: 120px;height: 35px;float: left;}
+.designers .sub-links a i {display: inline-block;width: 13px;height: 13px;margin-left: 5px;vertical-align: baseline;background: url(../images/element.png) -9px 0;} 
