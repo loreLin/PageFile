@@ -353,3 +353,14 @@ a:hover{color:red;}
 .designers .module-hd  .left-bottom em {padding: 0px;}
 .designers .right-bottom > div {width: 120px;height: 35px;float: left;}
 .designers .sub-links a i {display: inline-block;width: 13px;height: 13px;margin-left: 5px;vertical-align: baseline;background: url(../images/element.png) -9px 0;} 
+
+
+/* 【发布时装右侧显示隐藏】 开始 */
+.designers .module-hd a:hover {color: #970000;}
+.designers .module-hd .right-bottom > div > a { display: inline-block; position: relative;line-height:35px;text-align: center; width:100%;border-left: 1px solid #000;border-right: 1px solid #000;border-bottom: 1px solid #000;z-index:1999;}
+.designers .right-bottom > div:hover > a {border-left: 1px solid #989898; border-right: 1px solid #989898;z-index: 2001;}
+.designers .sub-links a:hover i { background: url(../images/element.png) -22px 0;}
+.shows-list-container:hover .shows-list{display:block}
+.quick-search-container:hover .quick-search{display:block}
+.shows-list-container .shows-list {top: 34px;z-index: 2000;width: 238px;}
+.designers .module-hd a:hover {color: #970000;}
