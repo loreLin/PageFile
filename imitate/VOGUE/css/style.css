@@ -385,5 +385,37 @@ a:hover{color:red;}
 .ajax-result {display: none;position: absolute;left: 0;width: 100%;max-height: 320px;overflow-y: auto; border-top: 1px dashed #353535;border-bottom: 1px dashed #353535; background-color: #000;padding: 5px 0;}
 .city-list {margin-bottom: 20px;}
 .module-hd .sub-links em {padding: 5px;color: #8a8a8a;}
-quick-search .newest {margin-top: 18px;}
+.quick-search .newest {margin-top: 18px;}
 .quick-search .newest a {display: block;margin-top: 7px;text-align: center;}
+
+
+
+/* 【时装发布Body】开始 */
+.designers .module-bd {width: 100%;height: 640px; overflow: -hidden;background: url(../images/designers-bg.jpg) bottom center no-repeat;}
+.designers .swiper-container {width: 1000px;height: 540px;margin: 0 auto;position:relative;}
+.designers .swiper-container ul.3d {position:relative;}
+.designers .swiper-container ul li {width: 360px;height: 540px;position:absolute;border: 1px solid #93999c;}
+
+.designers .swiper-container ul li.mark1{width:360px;height:540px;left:320px;top:0;opacity:1;z-index:10;}
+
+.designers .swiper-container ul li.mark2{width:316px;height:480px;left:624px;top:30px;opacity:0.9;z-index:9;}
+.designers .swiper-container ul li.mark8{width:316px;height:480px;left:60px;top:30px;opacity:0.9;z-index:9;}
+
+.designers .swiper-container ul li.mark3{width:216px;height:320px;left:784px;top:110px;opacity:0.8;z-index:8;}
+.designers .swiper-container ul li.mark7{width:216px;height:320px;left:0px;top:110px;opacity:0.8;z-index:8;}
+
+.designers .swiper-container ul li.mark4{width:117px;height:168px;left:726px;top:185px;opacity:0.7;z-index:7;}
+.designers .swiper-container ul li.mark6{width:117px;height:168px;left:160px;top:185px;opacity:0.7;z-index:7;}
+
+.designers .swiper-container ul li.mark5{width:68px;height:108px;left:464px;top:215;z-index:0.6;opacity:6;}
+
+.designers .swiper-container li img {display: block;width: 100%;height: 100%;}
+
+.designers .bottom-des {width: 100%;position: absolute;bottom:-60px;color: #fff;font-size: 16px;text-align: center;}
+.alphabet a.all{display: inline-block;width: 9px;height: 5px;background-image: url(../images/element.png);background-position: -129px -38px;vertical-align: middle;text-indent: -9999px;transition: transform .5s;-ms-transition: transform .5s;-moz-transition: transform .5s;-webkit-transition: transform .5s;-o-transition: transform .5s;}
+.alphabet a.allClick{transform: rotate(180deg);-ms-transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);/*for IE 8 7 6*/background-position/*\**/: -138px -38px \9;}
+.select:hover i{background-position: -129px -19px;}
+/*【时装发布Body】结束*/
+
+
+/*【时装发布】结束*/
