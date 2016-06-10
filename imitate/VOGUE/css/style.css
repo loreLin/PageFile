@@ -432,3 +432,13 @@ a:hover{color:red;}
 .features .next-arrow {right: 9px;}
 .features .main {overflow:hidden;height: 500px;}
 /* 【精彩专题】结束   */
+
+
+/* 【美容保养】开始   */
+.skincare {margin-bottom: 50px;}
+.skincare .module-hd .module-title {width: 482px;}
+.skincare .module-hd h2 a { height: 88px;background: url(../images/title-index-2.jpg) 0 -306px no-repeat;}
+.skincare .module-hd .sub-links {width: 259px;}
+.skincare .swiper-slide{  width: 1000px;height: 500px;width:1000px;}
+.skincare .swiper-container{overflow:hidden;}
+/* 【美容保养】结束   */
