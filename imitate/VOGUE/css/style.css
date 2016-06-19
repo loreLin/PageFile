@@ -442,3 +442,13 @@ a:hover{color:red;}
 .skincare .swiper-slide{  width: 1000px;height: 500px;width:1000px;}
 .skincare .swiper-container{overflow:hidden;}
 /* 【美容保养】结束   */
+
+/* 【名流派对】开始   */
+.party { margin-bottom: 50px;background-color: #b10101;}
+.party .module-hd .module-title {width: 456px;}
+.party .module-hd h2 a { height: 89px; background: url(../images/title-index-2.jpg) 0 -398px no-repeat;}
+.party .module-hd .sub-links { width: 272px;}
+.party .module-hd .sub-links a {color: #e5e5e5;}
+.party .module-hd .sub-links a:hover {color: #000;}
+.party .swiper-container{overflow:hidden;}
+/* 【名流派对】结束   */
