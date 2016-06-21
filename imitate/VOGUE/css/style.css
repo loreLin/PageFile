@@ -452,3 +452,12 @@ a:hover{color:red;}
 .party .module-hd .sub-links a:hover {color: #000;}
 .party .swiper-container{overflow:hidden;}
 /* 【名流派对】结束   */
+
+
+/* 【珠宝腕表】开始   */
+.jewelry .module-hd h2 a {height: 87px;background: url(../images/title-index-2.jpg) 0 -491px no-repeat;}
+.jewelry .module-hd .module-title { width: 480px;}
+.jewelry .module-hd .sub-links {width: 260px;}
+.jewelry .swiper-container{overflow:hidden;}
+.jewelry .swiper-container { width: 1000px;height: 340px; position: relative;overflow: hidden;}
+/* 【珠宝腕表】结束   */
