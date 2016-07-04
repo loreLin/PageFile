@@ -537,3 +537,42 @@ a:hover{color:red;}
 }
 
 /* 【视频】结束   */
+
+
+/* 【图库】开始   */
+.listimg{margin:25px auto;}
+.listimg .module-hd .module-title {
+  width: 440px;
+}
+.listimg .module-hd h2 a {
+  height: 91px;
+  background: url(../images/title-index-2.jpg) 0 -767px no-repeat;
+}
+.module-three .module-bd li {
+  float: left;
+  position: relative;
+}
+.module-three .module-bd li a {
+  display: block;
+  width: 249px;
+  height: 249px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+.module-three li span {
+  display: none;
+  position: absolute;
+  width: 161px;
+  height: 42px;
+  line-height: 19px;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  background: url(../images/span-bg.png) no-repeat scroll 0 0;
+  padding: 8px 15px 0 15px;
+  z-index: 999;
+  cursor: pointer;
+}
+.module-three li:hover span{display:block}
+/* 【图库】结束   */
