@@ -576,3 +576,123 @@ a:hover{color:red;}
 }
 .module-three li:hover span{display:block}
 /* 【图库】结束   */
+
+
+
+/* 【热门关注】结束   */
+.keywords {
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+.keywords .module-hd .module-title {
+  width: 298px;
+}
+.keywords .module-hd h2 a {
+  height: 88px;
+  background: url(../images/title-common.jpg) 0 -260px no-repeat;
+}
+
+.keywords .item {
+  float: left;
+  width: 168px;
+  padding: 0 41px;
+}
+.keywords h3 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.keywords a {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* 【热门关注】结束   */
+
+/* 【热门关注】开始   */
+.app-rec {
+  border-top: 6px solid #b10000;
+  background: #efeded;
+}
+.app-rec .wrapper {
+  height: 494px;
+  overflow: hidden;
+}
+.app-rec .ipad {
+transition:all .5s;
+  position: absolute;
+  left: 417px;
+  top: 63px;
+  width: 274px;
+  background: url(../images/ipad-bg.png) no-repeat center 40px;
+  padding: 80px 23px 40px;
+}
+.app-rec .magazine {
+transition:all .5s;
+  position: absolute;
+  left: 90px;
+  top: 160px;
+  width: 378px;
+  background: url(../images/magazine-bg.png) no-repeat center 40px;
+  padding: 45px 0 0 3px;
+}
+.app-rec .iphone {
+transition:all .5s;
+  position: absolute;
+  left: 745px;
+  top: 223px;
+  width: 110px;
+  background: url(../images/iphone-bg.png) no-repeat center 40px;
+  padding: 80px 16px 40px;
+}
+.app-rec .magazine p, .app-rec .ipad p, .app-rec .iphone p {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-size: 36px;
+  top: 0;
+  left: 0;
+  line-height: 36px;
+}
+.app-rec .iphone p {
+  font-size: 24px;
+}
+.app-rec .magazine p, .app-rec .ipad p, .app-rec .iphone p {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  font-size: 36px;
+  top: 0;
+  left: 0;
+  line-height: 36px;
+}
+.app-rec .line {
+  background: url(../images/app-line.png) no-repeat center top;
+  position: absolute;
+  width: 1000px;
+  bottom: 0;
+  left: 0;
+  height: 21px;
+}
+
+.app-rec .ipad i {
+  background: url(../images/ipad-light.png) no-repeat;
+  width: 217px;
+  height: 372px;
+  display: block;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+}
+.app-rec .iphone i {
+  background: url(../images/iphone-light.png) no-repeat;
+  width: 79px;
+  height: 275px;
+  display: block;
+  position: absolute;
+  top: 45px;
+  right: 5px;
+}
+.app-rec .ipad:hover{top:33px;}
+.app-rec .magazine:hover{top:130px;}
+.app-rec .iphone:hover{top:193px;}
+/* 【热门关注】结束   */
