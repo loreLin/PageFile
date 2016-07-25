@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+ <!--声明当前页面编码集（中文编码<gbk,gb2312>,国际编码<utf-8>）-->
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <!--声明当前页面的三要素-->
+ <title>制作游记</title>
+ <meta name="keywords" content="关键词,关键词">
+ <meta name="description" content="">
+
+ <!--css/js-->
+<style type="text/css">
+html,a,p,body,ul,li,ol,h3,dl,dt,dd,span,form,input,div,h4{margin: 0;padding: 0;list-style-type: none;text-decoration: none;font-family: "Microsoft YaHei";}
+html,body{overflow:hidden;}
+/*nav style*/
+#Nav{width: 100%;height:50px;background:#302F2B;}
+#Nav ul{width: 1200px;height:50px;margin:0px auto;list-style-type:none;position: relative;}
+#Nav ul li{height: 50px;float: left;color: #fff;font-size: 14px;text-align: center;line-height: 50px;}
+#Nav ul li a{color:#fff;height:50px;text-decoration: none;display: block;padding:0 30px;position: relative;z-index: 4;}
+#Nav ul li.logo{width:190px; background:#ddd;position:relative;border：1px solid red;}
+#Nav ul li.last{width:100px;height:50px; background:green; position:absolute;
+         left:190px;z-index:3; position: absolute;display:none;}
+.gd{position:fixed;top:0;left:0;z-index:10;}
+
+/*travel note step*/
+.page-header{width:100%;height:112px;padding-left:30px;}
+.header-inner{width:100%;height:112px;position:relative;padding:20px 0;min-height:60px;}
+.step-by-step{height:72px;border:1px solid blue;margin:30px auto;margin:0 0 0 45px;}
+.step-by-step .step{width:72px;height:44px;text-align:center;}
+.step-by-step .step .inner{width:72px;float:left;ont-size:16px;text-decoration:none;padding:54px 0 0;display:block;text-align:center;float:left;}
+.step-by-step .s-upload .inner{background:url(images/trip-new-icon-a.png) no-repeat;background-position:center 0px;}
+.step-by-step .s-trip-days .inner{background:url(images/trip-new-icon-a.png) no-repeat;background-position:center -180px;}
+.step-by-step .s-layout .inner{background:url(images/trip-new-icon-a.png) no-repeat;background-position:center -360px;}
+.step-by-step .s-publish .inner{background:url(images/trip-new-icon-a.png) no-repeat;background-position:center -451px;}
+.step-by-step .s-print .inner{background:url(images/trip-new-icon-a.png) no-repeat;background-position:center -542px;}
+.step-by-step .s-separator{width:50px;height:44px;}
+</style>
+</head>
+
+<body>
+<!--导航开始,滚动到一定高度，给它加固定-->
+<div id="Nav">
+    <ul>
+        <li class="logo"><img src="" title="" height="" width=""></li>
+        <li class="Fnav"><a href="#"> 首页</a ></li>
+        
+        <li class="last"></li>
+
+
+
+
+
+    </ul>
+</div>
+<!--导航结束-->
+
+
+<!--游记制作过程开始-->
+<div class="page-header">
+  <div class="header-inner">
+   <div class="step-by-step">
+    <div class="step s-upload">
+     <div class="inner">上传照片</div> 
+    </div>
+    <div class="s-separator"></div>
+    <div class="step s-trip-days">
+     <div class="inner">修改行程</div> 
+    </div>
+    <div class="s-separator"></div>
+    <div class="step s-layout">
+     <div class="inner">编辑排版</div> 
+    </div>
+    <div class="s-separator"></div>
+    <div class="step s-publish">
+     <div class="inner">发布游记</div> 
+    </div>
+    <div class="s-separator"></div>
+    <div class="step s-print">
+     <div class="inner">印制游记</div> 
+    </div>
+   </div>
+  </div>
+</div>
+<!--游记制作结束-->
+
+
+
+</body>
+
+</html>

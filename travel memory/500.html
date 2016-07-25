@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+ <!--声明当前页面编码集（中文编码<gbk,gb2312>,国际编码<utf-8>）-->
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <!--声明当前页面的三要素-->
+ <title>500</title>
+ <meta name="keywords" content="关键词,关键词">
+ <meta name="description" content="">
+
+ <!--css/js-->
+<style type="text/css">
+html,a,p,body,ul,li,ol,h3,dl,dt,dd,span,form,input,div,h4{margin: 0;padding: 0;list-style-type: none;text-decoration: none;font-family: "Microsoft YaHei";}
+body{background:url(images/error.jpg) no-repeat;}
+.left{float:left;}
+.right{float:right;}
+
+
+.content{width:1000px;height:280px;padding-top:100px;margin:50px 20px 0 300px;box-shadow:0px 0px 10px #666;position:relative;border-radius:20px;}
+.content .allopacity{width:1000px;height:300px;padding-top:80px;margin:0px auto;filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5;background:#ddd;position:absolute;top:0;left:0;border-radius:20px;}
+.content .con{position:absolute;width:1000px;height:300px; top:0px; left:0px;}
+.content .imgcon{width:300px;height:300px;margin:30px 50px 0 120px;}
+.content .warn{height:300px;margin:100px auto;position:relative;}
+.content .warn .warnright{position:absolute;right:45px;top:10px;}
+.content .warn p{font-size:14px;color:#000;margin-bottom:15px;}
+.content .warn p span{color:#535353;}
+.content .warn p span.num{font-size:40px;margin-right:20px;}
+.content .warn p span.line{font-size:36px;}
+.content .warnright p span.remind{font-size:18px;display:block;margin-bottom:45px;}
+.content .warnright p a{color:#6600ff;margin:0 15px 0 15px;}
+#mes{margin-right:10px;}
+</style>
+</head>
+
+<body>
+
+<div class="content">
+  <div class="allopacity"></div>
+  <div class="con">
+    <div class="imgcon left">
+     <img src="images/warn.png" height="300" width="300" alt="">
+	</div>
+	<div class="warn">
+	  <div class="warnleft">
+         <p><span class="num">500</span>
+	     <span class="line">|</span></p>
+	  </div>
+	  <div class="warnright">
+	   <p><span class="remind">抱歉，服务器内部错误，没有操作权限</span></p>
+	  
+	  
+	  <p><span id="mes">10</span>秒之后会自动跳转，您还可以</p>
+      <p>1）<a href="">联系我们</a></p>
+	  <p class="else">2）&nbsp;&nbsp;&nbsp;去其他地方逛逛：<a>回到首页</a>|<a>返回上一页面</a></p>
+	  <p>3）<a href="">尝试刷新</a></p>
+	</div>
+  </div>
+  
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+//倒计时
+var _time = 10;
+var intervalid;
+intervalid = setInterval("time()",1000);
+function time(){
+  if(_time == 0){
+    window.location.href = "../index.html";
+	clearInterval(intervalid);
+  }
+  document.getElementById("mes").innerHTML = _time;
+  _time--;
+}
+
+</script>
+
+
+</body>
+
+</html>

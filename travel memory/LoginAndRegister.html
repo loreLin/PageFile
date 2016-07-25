@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+ <!--声明当前页面编码集（中文编码<gbk,gb2312>,国际编码<utf-8>）-->
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <!--声明当前页面的三要素-->
+ <title>旅行回忆</title>
+ <meta name="keywords" content="关键词,关键词">
+ <meta name="description" content="">
+ <style type="text/css">
+html,a,p,body,ul,li,ol,h3,dl,dt,dd,span,form,input,div,h4{margin: 0;padding: 0;list-style-type: none;text-decoration: none;font-family: "Microsoft YaHei";}
+body{background:url(images/Logbg.jpg) no-repeat;background-size:100% 100%;}
+/*nav style*/
+#Nav{width: 100%;height:50px;background:#302F2B;}
+#Nav ul{width: 1200px;height:50px;margin:0px auto;list-style-type:none;position: relative;}
+#Nav ul li{height: 50px;float: left;color: #fff;font-size: 14px;text-align: center;line-height: 50px;}
+#Nav ul li a{color:#fff;height:50px;text-decoration: none;display: block;padding:0 30px;position: relative;z-index: 4;}
+#Nav ul li.logo{width:190px; background:#ddd;position:relative;border：1px solid red;}
+#Nav ul li.last{width:100px;height:50px; background:green; position:absolute;
+         left:190px;z-index:3; position: absolute;display:none;}
+.gd{position:fixed;top:0;left:0;z-index:10;}
+
+
+/*用户注册和登录*/
+
+#LoginAndRegister{width:1000px;height:580px;padding-top:100px;margin:30px auto;box-shadow:0px 0px 10px #666;position:relative;border-radius:20px;}
+#LoginAndRegister .allopacity{width:1000px;height:600px;padding-top:80px;margin:0px auto;filter:alpha(opacity=30); -moz-opacity:0.3; -khtml-opacity:0.3; opacity:0.3;background:#ddd;position:absolute;top:0;left:0;border-radius:20px;}
+#LoginAndRegister .logcon{position:absolute;width:1000px;height:600px; top:0px; left:0px;}
+#LoginAndRegister p.tit{width:800px;height:60px;margin:0px auto;}
+#LoginAndRegister p.tit span{display:block;float:left;width:50%;border-bottom:1px solid #ddd;height:58px;line-height:58px;text-align:center;font-size:18px;}
+#LoginAndRegister p.tit span.active{border-bottom:2px solid #6699ff;}
+#LoginAndRegister .Con{width:700px;height:450px;  margin:50px auto 10px;}
+#LoginAndRegister .Con p{font-size:14px;color:#666;margin-bottom:20px;}
+#LoginAndRegister .Con p input.txt{width:300px; height:40px; border:1px solid #ddd; border-radius:3px;}
+#LoginAndRegister .Con p span{width:80px; text-align:right; display:inline-block;color:#000;}
+#LoginAndRegister .Con p input.but{width:120px;height:40px; background:#ddd; color:#000; font-size:14px;
+						border-radius:3px; margin-left:80px;border:0px;}
+#LoginAndRegister .Con p.txt a{font-size:14px; color:#3399ff;margin-left:80px;margin-right:10px;}
+#LoginAndRegister .Con .Register{display:none;}
+
+ </style>
+
+</head>
+
+<body>
+
+
+
+
+
+<!--导航开始,滚动到一定高度，给它加固定-->
+<div id="Nav">
+    <ul>
+        <li class="logo"><img src="" title="" height="" width=""></li>
+        <li class="Fnav"><a href="#"> 首页</a ></li>
+        
+        <li class="last"></li>
+
+
+
+
+
+    </ul>
+</div>
+<!--导航结束-->
+
+
+
+<!--内容页主体开始-->
+ 
+
+<!--用户注册和登录开始-->
+
+<div id="LoginAndRegister">
+<div class="allopacity"></div>
+<div class="logcon">
+	<p class="tit"> <span class="active">用户登录</span> <span>用户注册</span> </p>
+    <div class="Con">
+
+		<!--用户登录开始-->
+		<div class="Login">
+			<form>
+				<p><span>用户名：</span><input type="text" class="txt" />  </p>
+				<p><span>密  码：</span><input type="password" class="txt" />  </p>
+				<p><span></span> <input type="checkbox" id="ck" /> <label for="ck">请保存我这次的登录信息</label></p>
+				<P> <input type="button"  value="登录" class="but"/>
+					
+				</p>
+				<p class="txt"><a href="" class="findpwd">密码问题找回密码</a> <a href="">注册邮件找回密码</a></p>
+
+			</form>
+		</div>
+		<!--用户登录结束-->
+
+		<!--用户注册开始-->
+		<div class="Register">
+			<form>
+				<p>	<span>用户名：</span><input type="text" class="txt"  id="user"/>
+					<label id="l_user">用户名是由数字、字母、下划线组成</label> 
+				</p>
+
+				<p>	<span>邮箱：</span><input type="text" class="txt"  id="email"/>
+					<label id="l_email">请输入正确的邮箱地址</label>  
+				</p>
+
+				<p>	<span>密码：</span><input type="password" class="txt" id="pwd" />
+					<label id="l_pwd">密码是6-16由数字、字母、下划线</label>
+				</p>
+				<p>	<span>确认密码：</span><input type="password" class="txt"  id="qrpwd"/>
+					<label id="l_qrpwd">两次密码要一样</label>  
+				</p>
+				
+				<P> <input type="button"  value="注册新用户" class="but"/> </p>
+				
+
+			</form>
+		</div>
+		<!--用户注册结束-->
+
+	</div>
+
+
+
+
+
+</div>  
+</div>
+<!--内容页主体结束-->
+
+
+
+
+
+
+
+
+
+<!--网站底部开始-->
+
+<!--网站底部结束-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+     //吸顶盒导航$(window)获取当前窗口
+     /*浏览器窗口的滚动事件scroll*/
+$(window).scroll(function(){
+	var _top=$(window).scrollTop();//获取浏览器滚动的高度
+
+	var _height=$("#Nav").height();
+	if(_top >= _height){
+		$("#Nav").addClass("gd");
+      
+		
+
+	}else{
+		$("#Nav").removeClass("gd");
+		
+		
+	}
+});
+
+
+    //用户购买时的登录和注册页面
+    $("#LoginAndRegister p span").mouseover(function(){
+	   var _index=$(this).index();
+       $(this).addClass("active").siblings().removeClass("active");
+	   $("#LoginAndRegister .Con div").eq(_index).show().siblings().hide();
+	
+	});
+
+
+	//用户名
+	$("input#user").keyup(function(){
+	  //用户名不能为空
+	  var txt=$(this).val();
+	  if(txt==""){
+	    $("label#l_user").css("color","red");
+	  }else{
+	    $("label#l_user").css("color","#666");
+	  }
+	
+
+
+	  //当用户名不符合要求时
+		/**用户名规则：
+		   1、字母、数字、下划线组成，字母开头，4-16位。
+		   2、 re = /^[0-9a-zA-Z]\w{3,15}$/;
+		**/
+      var re=/^[a-zA-Z]\w{3,15}$/
+	  var bool=re.test(txt);
+	  if(!bool){
+	     $("label#l_user").css("color","red");
+	  }
+
+	});
+
+	//邮箱验证
+	$("input#email").keyup(function(){
+		var txt=$(this).val();
+		if(txt==""){
+			$("label#l_email").css("color","red");
+		}else{
+			$("label#l_email").css("color","#666");
+		}
+		/** 邮箱验证规则：
+			 1、姑且把邮箱地址分成“第一部分@第二部分”这样  905wlm   @   qq.com
+			 2、第一部分：由字母、数字、下划线、短线“-”、点号“.”组成，
+			 3、第二部分：为一个域名，域名由字母、数字、短线“-”、域名后缀组成，
+			 4、而域名后缀一般为.xxx或.xxx.xx，一区的域名后缀一般为2-4位字母，如cn,com,net，
+			 现在域名有的也会大于4位
+		 myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
+		 **/
+
+		 var re=/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
+		 var bool=re.test(txt);
+		 if(!bool){
+
+			$("label#l_email").css("color","red");
+		}
+	});
+
+
+	//密码
+	$("input#pwd").keyup(function(){
+		//密码不能为空
+		var txt=$(this).val();
+		if(txt==""){
+			$("label#l_pwd").css("color","red");
+			return;
+		}else{
+			$("label#l_pwd").css("color","#666");
+		}
+
+		//当用户名不符合要求时
+		/**用户名规则：
+		   1、字母、数字、下划线组成，字母开头，4-16位。
+		   2、 re = /^[0-9a-zA-Z]\w{3,15}$/;
+		**/
+		var re=/^[0-9a-zA-Z]\w{3,15}$/;
+		var bool=re.test(txt);
+		if(!bool){
+			$("label#l_pwd").css("color","red");
+			return;
+		}
+
+	});
+	//确认密码
+	$("input#qrpwd").blur(function(){
+		var txt2=$(this).val();
+		var txt=$("input#pwd").val();
+		if(txt!=txt2){
+
+			$("label#l_qrpwd").css("color","red");
+			return;
+		}
+
+	});
+/**用户名规则：
+   1、字母、数字、下划线组成，字母开头，4-16位。
+   2、 re = /^[a-zA-z]\w{3,15}$/;
+   **/
+
+
+/**  邮政编码
+	/^[0-9]{6}$/
+**/
+
+/**手机号码规则：
+   1、11位数字，以1开头。
+   2、 re = /^1\d{10}$/
+   **/
+
+/**电话号码规则：
+   1、区号+号码，区号以0开头，3位或4位
+	2、号码由7位或8位数字组成
+	3、区号与号码之间可以无连接符，也可以“-”连接
+	4、如01088888888,010-88888888,0955-7777777 。
+	re = /^0\d{2,3}-?\d{7,8}$/;
+   **/
+
+ /** 邮箱验证规则：
+ 1、姑且把邮箱地址分成“第一部分@第二部分”这样
+ 2、第一部分：由字母、数字、下划线、短线“-”、点号“.”组成，
+ 3、第二部分：为一个域名，域名由字母、数字、短线“-”、域名后缀组成，
+ 4、而域名后缀一般为.xxx或.xxx.xx，一区的域名后缀一般为2-4位字母，如cn,com,net，现在域名有的也会大于4位
+	myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
+re=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z]{2,4})+$/
+ **/
+
+
+</script>
+
+
+</body>
+
+</html>
