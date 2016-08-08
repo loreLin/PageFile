@@ -85,7 +85,7 @@ html,a,p,body,ul,li,ol,h3,dl,dt,dd,span,form,input,div,h4{margin: 0;padding: 0;l
 /*news style*/
 #Part1 .PartCon .news{width:190px; height:419px; float:right;position:relative;}
 #Part1 .PartCon .news .newsOpacity{width:190px;height:419px;
-background:#0a0202;filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity: 0.7; opacity: 0.7;  }
+background:#0a0202;filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3; opacity: 0.3;  }
 #Part1 .PartCon .news .newsCon{position:absolute;width:190px;height:419px; top:0px; left:0px;
 			color:#fff;}
 #Part1 .PartCon .news .newsCon h3{height:43px; background:#30060c; font-size:14px; color:#fff;
